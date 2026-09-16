@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Locations — Dr. Pacifico Cruz, MD</title>
-<meta name="description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
-<link rel="canonical" href="https://provenanceclinic.com/locations.html">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Complex Tissue Reconstruction — Dr. Pacifico Cruz, MD</title>
+<meta name="description" content="Rebuilding what trauma, tumour removal, or infection has taken — free tissue transfer reconnected under the operating microscope.">
+<link rel="canonical" href="https://provenanceclinic.com/procedures/tissue-reconstruction.html">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
-<meta property="og:title" content="Locations — Dr. Pacifico Cruz, MD">
-<meta property="og:description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
-<meta property="og:url" content="https://provenanceclinic.com/locations.html">
+<meta property="og:title" content="Complex Tissue Reconstruction — Dr. Pacifico Cruz, MD">
+<meta property="og:description" content="Rebuilding what trauma, tumour removal, or infection has taken — free tissue transfer reconnected under the operating microscope.">
+<meta property="og:url" content="https://provenanceclinic.com/procedures/tissue-reconstruction.html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Locations — Dr. Pacifico Cruz, MD">
-<meta name="twitter:description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
+<meta name="twitter:title" content="Complex Tissue Reconstruction — Dr. Pacifico Cruz, MD">
+<meta name="twitter:description" content="Rebuilding what trauma, tumour removal, or infection has taken — free tissue transfer reconnected under the operating microscope.">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&amp;family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&amp;family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Fraunces:ital,wght@0,300;0,400;0,500;1,400;1,500&amp;display=swap">
   <style>
@@ -131,18 +131,6 @@
     }
     .btn-primary:hover::before { transform: translate(0, 0); opacity: 0; }
 
-    /* ——— LUZ: a figure travelling the route as you scroll ——— */
-    .arc-scope { view-timeline-name: --arc; view-timeline-axis: block; }
-    @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
-    .travel { offset-rotate: auto; offset-distance: 50%; }
-    @supports not (offset-path: path("M0 0")) { .travel { display: none; } }
-    @supports (animation-timeline: view()) {
-      .travel { animation: travel linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .travel { animation: none !important; offset-distance: 50% !important; }
-    }
-
     /* ——— RESPONSIVE ——— */
     @media (max-width: 900px) {
       .cols { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
@@ -161,120 +149,132 @@
 </head>
 <body>
 
-
 <div style="width:100%; background: oklch(99% 0.004 90);">
 
   <!-- NAV -->
   <div class="nav" style="position:sticky; top:0; z-index:20; display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
     <div style="display:flex; align-items:center; gap:38px;">
-      <a href="about.html" class="eyebrow nav-link">About</a>
-      <a href="procedures/index.html" class="eyebrow nav-link">Procedures</a>
+      <a href="../about.html" class="eyebrow nav-link">About</a>
+      <a href="index.html" class="eyebrow nav-link">Procedures</a>
     </div>
-    <a href="index.html" style="text-decoration:none; color:inherit;"><span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:21px; text-align:center;">Dr. Pacifico Cruz</span></a>
+    <a href="../index.html" style="text-decoration:none; color:inherit;"><span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:21px; text-align:center;">Dr. Pacifico Cruz</span></a>
     <div style="display:flex; align-items:center; justify-content:flex-end; gap:38px;">
-      <a href="journal.html" class="eyebrow nav-link">Journal</a>
-      <a href="locations.html" class="eyebrow nav-link is-active">Locations</a>
-      <a href="contact.html" class="link-quiet">Book</a>
+      <a href="../journal.html" class="eyebrow nav-link">Journal</a>
+      <a href="../locations.html" class="eyebrow nav-link">Locations</a>
+      <a href="../contact.html" class="link-quiet">Book</a>
     </div>
     <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
   </div>
 
   <!-- HEADER -->
-  <div style="max-width:760px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(72px, 12vw, 100px); text-align:center;">
-    <div style="display:flex; flex-direction:column; align-items:center; gap:26px;">
-      <span class="eyebrow enter d1">Locations</span>
-      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.6vw, 62px); line-height:1.15; max-width:560px;">Where to find him</h1>
-      <p class="enter d3" style="font-size:16px; line-height:1.85; color:oklch(38% 0.012 55); max-width:460px;">
-        A personal practice, not a single clinic &mdash; Dr. Cruz consults across partner
-        hospitals in Metro Manila.
-      </p>
+  <div style="max-width:780px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 70px); text-align:center;">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
+      <span class="eyebrow enter d1">Reconstructive &amp; Microsurgery</span>
+      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.8vw, 64px); line-height:1.15; max-width:660px;">Complex tissue <em>reconstruction</em></h1>
+      <p class="enter d3" style="font-size:16.5px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">Rebuilding what trauma, tumour removal or infection has taken &mdash; moving living tissue, with its blood supply, and reconnecting it under the microscope.</p>
     </div>
   </div>
 
-  <!-- QUIET MAP MOMENT -->
-  <div class="arc-scope" style="max-width:640px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(36px, 8vw, 90px); display:flex; flex-direction:column; align-items:center; gap:22px;">
-    <svg width="100%" height="140" viewBox="0 0 560 140" fill="none">
-      <!-- abstract car, five strokes, riding the route -->
-      <g class="travel" style="offset-path: path('M0 110 C 90 70, 190 130, 260 88 S 420 30, 550 55');">
-        <path d="M-11 2 L-11 -1 L-6 -1 L-3 -5 L4 -5 L7 -1 L11 -1 L11 2 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-        <circle cx="-6" cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-        <circle cx="6"  cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-      </g>
-      <path class="draw" d="M0 110 C 90 70, 190 130, 260 88 S 420 30, 550 55" stroke="oklch(16% 0.006 50)" stroke-width="1" opacity="0.4" style="stroke-dasharray:760; stroke-dashoffset:760;"/>
-      <g transform="translate(240,88)">
-        <circle class="ping" r="4" fill="none" stroke="oklch(38% 0.09 155)" stroke-width="1"/>
-        <circle r="4" fill="none" stroke="oklch(38% 0.09 155)" stroke-width="1"/>
-        <circle class="glow" r="2" fill="oklch(38% 0.09 155)"/>
-      </g>
-      <g transform="translate(430,40)">
-        <circle class="ping" r="4" fill="none" stroke="oklch(58% 0.008 240)" stroke-width="1" style="animation-delay:1.9s;"/>
-        <circle r="4" fill="none" stroke="oklch(58% 0.008 240)" stroke-width="1" opacity="0.85"/>
-        <circle class="glow" r="2" fill="oklch(58% 0.008 240)" style="animation-delay:1.9s;"/>
-      </g>
-    </svg>
-    <span class="label" style="text-align:center; max-width:420px;">Two consultation points across Metro Manila. Schematic, not to scale.</span>
-  </div>
-
-  <!-- LOCATION LIST -->
-  <div style="max-width:820px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 150px);">
-    <div class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
-      <div>
-        <div class="label" style="margin-bottom:10px;">Flagship &middot; Lymphedema Surgery Consultancy</div>
-        <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">St. Luke's Medical Center &mdash; BGC</div>
-        <div style="font-size:14px; line-height:1.9; color:oklch(42% 0.012 55);">
-          [SUITE / ROOM NUMBER]<br>
-          Taguig, Metro Manila<br>
-          [CONSULTATION PHONE NUMBER]<br>
-          [CLINIC HOURS]
-        </div>
-      </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
-        <a href="#" class="link-quiet">Get Directions</a>
-      </div>
-    </div>
-    <div class="row" style="padding:44px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
-      <div>
-        <div class="label" style="margin-bottom:10px;">Consultation</div>
-        <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">Cardinal Santos Medical Center</div>
-        <div style="font-size:14px; line-height:1.9; color:oklch(42% 0.012 55);">
-          [SUITE / ROOM NUMBER]<br>
-          San Juan, Metro Manila<br>
-          [CONSULTATION PHONE NUMBER]<br>
-          [CLINIC HOURS]
-        </div>
-      </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
-        <a href="#" class="link-quiet">Get Directions</a>
-      </div>
+  <!-- LEAD IMAGE -->
+  <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 120px);">
+    <!-- <img src="images/procedures/tissue-reconstruction-lead.jpg" alt="" style="width:100%; aspect-ratio:2.4; object-fit:cover;"> -->
+    <div class="ph enter d4" style="aspect-ratio:2.4;">
+      <div class="ph-name">Lead &mdash; microscope or operative field</div>
+      <div class="ph-spec">2.4:1 &middot; 2400px wide min<br>no identifiable patient</div>
     </div>
   </div>
 
-  <!-- CONSULTATION ENVIRONMENTS -->
-  <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 150px);">
-    <div class="cols" style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
-      <div class="ph reveal" style="aspect-ratio:1.5;">
-        <div class="ph-name">St. Luke's &mdash; BGC</div>
-        <div class="ph-spec">3:2 &middot; 2400px min<br>consult room or suite entrance</div>
-      </div>
-      <div class="ph reveal" style="aspect-ratio:1.5;">
-        <div class="ph-name">Cardinal Santos</div>
-        <div class="ph-spec">3:2 &middot; 2400px min<br>consult room or suite entrance</div>
-      </div>
-    </div>
+  <!-- WHAT IT IS -->
+  <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
+    <span class="label reveal">What it is</span>
+    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">When a defect is too large or too exposed to close directly, tissue is taken from elsewhere on the body along with the artery and vein that feed it. Those vessels are then joined to vessels at the site under an operating microscope, and the transferred tissue lives on its new blood supply.<br><br>The choice of donor site is a trade-off &mdash; what the reconstruction needs against what the donor area can lose. That reasoning, and the monitoring in the days after surgery when a flap is most at risk, is most of what makes this work succeed.</p>
   </div>
 
-  <!-- ADDITIONAL PARTNER LOCATIONS -->
+  <!-- PROVENANCE -->
   <div style="background: oklch(97% 0.008 80);">
-    <div style="max-width:640px; margin:0 auto; padding:clamp(36px, 8vw, 70px) clamp(24px, 5vw, 56px); text-align:center;">
-      <p style="font-size:14.5px; line-height:1.85; color:oklch(38% 0.012 55);">
-        Dr. Cruz also consults at additional partner hospitals across Metro Manila.
-        [ADDITIONAL PARTNER LOCATIONS &mdash; TO BE ADDED]. Ask at booking for the location
-        most convenient for you.
-      </p>
-      <p style="font-size:14.5px; line-height:1.85; color:oklch(38% 0.012 55); margin-top:22px;">
-        Travelling from outside the Philippines? The consultation and follow-up are
-        handled remotely &mdash; <a href="international.html" class="link-quiet">see how international patients are cared for</a>.
-      </p>
+    <div style="max-width:640px; margin:0 auto; padding:clamp(72px, 12vw, 110px) clamp(24px, 5vw, 56px); text-align:center;">
+      <span class="eyebrow" style="color:oklch(38% 0.09 155);">Provenance</span>
+      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">Microsurgery trained in Tokyo</h3>
+      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:520px; margin:22px auto 0;">Free tissue transfer is part of the year-long fellowship (2024&ndash;2025) Dr. Cruz completed under Dr. Rei Ogawa at Nippon Medical School, Tokyo, spanning reconstructive surgery and microsurgery.</p>
+    </div>
+  </div>
+
+  <!-- ILLUSTRATION + DETAIL -->
+  <div style="max-width:1080px; margin:0 auto; padding:clamp(72px, 12vw, 130px) clamp(24px, 5vw, 56px) 0;">
+    <div class="cols" style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
+      <div class="ph reveal" style="aspect-ratio:1.35;">
+        <div class="ph-name">Illustration &mdash; free tissue transfer, schematic</div>
+        <div class="ph-spec">line-art &middot; ink + jaguar green<br>can be drawn to match the site</div>
+      </div>
+      <div class="ph reveal" style="aspect-ratio:1.35;">
+        <div class="ph-name">Detail &mdash; microsurgical anastomosis</div>
+        <div class="ph-spec">3:2 &middot; 2000px min &middot; macro</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE PROCESS -->
+  <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">Start to Finish</span>
+      <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">How it runs</h2>
+    </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">I</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Consultation</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Assessment in person, a discussion of what is realistic, and a plan. Nothing is booked at the first visit unless you want it to be.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">II</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">The procedure</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">[TYPICAL DURATION] under [ANAESTHESIA TYPE], at St. Luke's Medical Center, BGC or Cardinal Santos Medical Center.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">III</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Early recovery</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">[FIRST-WEEK EXPECTATIONS &mdash; dressings, swelling, activity limits, time off work].</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">IV</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Follow-up</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">[FOLLOW-UP SCHEDULE]. For patients travelling from abroad, follow-up continues by video once you are home.</div>
+        </div>
+      </div>
+
+    <!-- PRACTICAL -->
+    <div class="cols" style="display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:44px; margin-top:64px; text-align:center;">
+      <div class="reveal"><div class="label" style="margin-bottom:10px;">Duration</div><div style="font-size:14.5px; color:oklch(32% 0.01 55);">[TYPICAL DURATION]</div></div>
+      <div class="reveal"><div class="label" style="margin-bottom:10px;">Anaesthesia</div><div style="font-size:14.5px; color:oklch(32% 0.01 55);">[ANAESTHESIA TYPE]</div></div>
+      <div class="reveal"><div class="label" style="margin-bottom:10px;">Days in Manila</div><div style="font-size:14.5px; color:oklch(32% 0.01 55);">[LENGTH OF STAY]</div></div>
+    </div>
+    <p class="label reveal" style="text-align:center; margin-top:40px; max-width:520px; margin-left:auto; margin-right:auto;">Candidacy for any procedure is determined at an in-person consultation. Not every procedure suits every patient.</p>
+  </div>
+
+  <!-- RELATED -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 120px) clamp(24px, 5vw, 56px);">
+      <span class="eyebrow" style="display:block; text-align:center; margin-bottom:40px;">Related</span>
+      <div class="row" style="padding:26px 0; display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Lymphedema Surgery</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">Microsurgery for lymphatic dysfunction</div>
+        </div>
+        <a href="../consultation.html" class="link-quiet">Read on</a>
+      </div>
+      <div class="row" style="padding:26px 0; border-bottom:1px solid oklch(88% 0.006 80); display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Scar &amp; Burn Care</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">Reconstruction after injury or at birth</div>
+        </div>
+        <a href="../consultation.html" class="link-quiet">Read on</a>
+      </div>
     </div>
   </div>
 
@@ -282,7 +282,7 @@
   <div style="position:relative; overflow:hidden; padding:clamp(72px, 12vw, 170px) clamp(24px, 5vw, 56px); background: oklch(15% 0.035 155); text-align:center;">
     <div class="aurora" style="position:absolute; inset:-25%; pointer-events:none; background: radial-gradient(closest-side, oklch(46% 0.11 155 / 0.45), transparent 72%);"></div>
     <div style="position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:26px;">
-      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:480px;">Not sure which location works for you?</h2>
+      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:520px;">Discuss whether this is right for you</h2>
       <a href="#" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
     </div>
   </div>
@@ -296,13 +296,13 @@
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Practice</span>
-        <a href="about.html" class="footer-link" style="font-size:13.5px;">About</a>
-        <a href="procedures/index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
-        <a href="journal.html" class="footer-link" style="font-size:13.5px;">Journal</a>
-        <a href="locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
-        <a href="consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
-        <a href="international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
-        <a href="contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
+        <a href="../about.html" class="footer-link" style="font-size:13.5px;">About</a>
+        <a href="index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
+        <a href="../journal.html" class="footer-link" style="font-size:13.5px;">Journal</a>
+        <a href="../locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
+        <a href="../consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
+        <a href="../international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
+        <a href="../contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Locations</span>
