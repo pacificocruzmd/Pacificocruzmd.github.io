@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nanofat — Dr. Pacifico Cruz, MD</title>
-<meta name="description" content="Emulsified autologous fat, injected to change skin quality rather than add volume — developed by Dr. Tonnard and Dr. Verpaele in Ghent.">
-<link rel="canonical" href="https://provenanceclinic.com/procedures/nanofat.html">
+<title>Nanofat &amp; Structural Fat Grafting — Dr. Pacifico Cruz, MD</title>
+<meta name="description" content="Two fat grafting techniques from a single harvest: nanofat for skin quality, structural fat grafting for volume — developed by Dr. Tonnard and Dr. Verpaele in Ghent.">
+<link rel="canonical" href="https://pacificocruz.com/procedures/nanofat.html">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="../favicon-32.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
-<meta property="og:title" content="Nanofat — Dr. Pacifico Cruz, MD">
-<meta property="og:description" content="Emulsified autologous fat, injected to change skin quality rather than add volume — developed by Dr. Tonnard and Dr. Verpaele in Ghent.">
-<meta property="og:url" content="https://provenanceclinic.com/procedures/nanofat.html">
+<meta property="og:title" content="Nanofat &amp; Structural Fat Grafting — Dr. Pacifico Cruz, MD">
+<meta property="og:description" content="Two fat grafting techniques from a single harvest: nanofat for skin quality, structural fat grafting for volume — developed by Dr. Tonnard and Dr. Verpaele in Ghent.">
+<meta property="og:url" content="https://pacificocruz.com/procedures/nanofat.html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nanofat — Dr. Pacifico Cruz, MD">
-<meta name="twitter:description" content="Emulsified autologous fat, injected to change skin quality rather than add volume — developed by Dr. Tonnard and Dr. Verpaele in Ghent.">
+<meta name="twitter:title" content="Nanofat &amp; Structural Fat Grafting — Dr. Pacifico Cruz, MD">
+<meta name="twitter:description" content="Two fat grafting techniques from a single harvest: nanofat for skin quality, structural fat grafting for volume — developed by Dr. Tonnard and Dr. Verpaele in Ghent.">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&amp;family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&amp;family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Fraunces:ital,wght@0,300;0,400;0,500;1,400;1,500&amp;display=swap">
   <style>
@@ -63,8 +63,10 @@
     .nav-link { color: oklch(16% 0.006 50); opacity: 0.62; transition: opacity 0.35s ease; }
     .nav-link:hover, .nav-link.is-active { opacity: 1; }
     .row { border-top: 1px solid oklch(90% 0.006 80); transition: padding-left 0.4s cubic-bezier(.16,1,.3,1); }
-    .row:hover { padding-left: 10px; }
-    .row:hover .row-title { color: oklch(38% 0.09 155); }
+    @media (hover: hover) and (pointer: fine) {
+      .row:hover { padding-left: 10px; }
+      .row:hover .row-title { color: oklch(38% 0.09 155); }
+    }
     .row-title { transition: color 0.35s ease; }
     .footer-link { color: oklch(16% 0.006 50); opacity: 0.55; transition: opacity 0.3s ease; }
     .footer-link:hover { opacity: 1; }
@@ -83,8 +85,8 @@
     .draw { animation: draw 2.8s cubic-bezier(.37,0,.16,1) .45s both; }
     .ping { transform-box: fill-box; transform-origin: center; opacity: 0; }
     .row { position: relative; }
-    .row::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: oklch(38% 0.09 155); transform: scaleY(0); transform-origin: top; transition: transform .6s cubic-bezier(.16,1,.3,1); }
-    .row:hover::before { transform: scaleY(1); }
+    .row::before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: oklch(38% 0.09 155); transform: scaleX(0); transform-origin: left; transition: transform .6s cubic-bezier(.16,1,.3,1); }
+    @media (hover: hover) and (pointer: fine) { .row:hover::before { transform: scaleX(1); } }
 
     /* scroll-driven — degrades to fully visible where unsupported */
     @supports (animation-timeline: view()) {
@@ -135,9 +137,24 @@
     @media (max-width: 900px) {
       .cols { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
     }
+
+    /* ——— MOBILE NAV DROPDOWN ——— */
+    .nav-toggle { display:flex; background:none; border:none; cursor:pointer; padding:8px; margin:0 -8px 0 4px; flex-direction:column; justify-content:center; gap:5px; width:28px; }
+    .nav-toggle span { display:block; height:1.5px; width:100%; background:oklch(20% 0.01 60); transition:transform 0.25s ease, opacity 0.25s ease; }
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity:0; }
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+    .nav-logo { font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:75px; line-height:1; text-decoration:none; color:inherit; transition:opacity 0.3s ease; position:relative; top:-11px; }
+    .nav-logo:hover { opacity:0.7; }
+    .nav-mobile-menu { display:flex; flex-direction:column; position:absolute; top:calc(100% + 14px); right:0; left:auto; min-width:200px; background:oklch(99% 0.004 90); border:1px solid oklch(90% 0.006 85); border-radius:14px; padding:8px 24px 10px; z-index:19; box-shadow:0 18px 36px -14px oklch(20% 0.01 60 / 0.22); opacity:0; transform:translateY(-8px); pointer-events:none; transition:opacity 0.25s ease, transform 0.25s ease; }
+    .nav-mobile-menu a { padding:14px 0; border-bottom:1px solid oklch(93% 0.006 85); font-size:15px; color:inherit; text-decoration:none; white-space:nowrap; display:block; }
+    .nav-mobile-menu a:last-child { border-bottom:none; }
+    .nav-mobile-menu a.is-active { font-weight:500; color:oklch(38% 0.09 155); }
+    .nav-mobile-menu a.nav-cta { color:oklch(38% 0.09 155); font-weight:500; }
+    .nav.menu-open .nav-mobile-menu { opacity:1; transform:translateY(0); pointer-events:auto; }
+
     @media (max-width: 720px) {
-      .nav { height: 74px !important; }
-      .nav-link { display: none !important; }
+      .nav { height: 74px !important; position:relative; }
       .hero { min-height: 560px !important; }
       .row { grid-template-columns: 1fr !important; gap: 10px !important; }
       .row:hover { padding-left: 0 !important; }
@@ -152,16 +169,11 @@
 <div style="width:100%; background: oklch(99% 0.004 90);">
 
   <!-- NAV -->
-  <div class="nav" style="position:sticky; top:0; z-index:20; display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
-    <div style="display:flex; align-items:center; gap:38px;">
-      <a href="../about.html" class="eyebrow nav-link">About</a>
-      <a href="index.html" class="eyebrow nav-link">Procedures</a>
-    </div>
-    <a href="../index.html" style="text-decoration:none; color:inherit;"><span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:21px; text-align:center;">Dr. Pacifico Cruz</span></a>
-    <div style="display:flex; align-items:center; justify-content:flex-end; gap:38px;">
-      <a href="../journal.html" class="eyebrow nav-link">Journal</a>
-      <a href="../locations.html" class="eyebrow nav-link">Locations</a>
-      <a href="../contact.html" class="link-quiet">Book</a>
+  <div class="nav" style="position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
+    <a href="../index.html" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
+    <div style="position:relative;">
+      <button class="nav-toggle" aria-label="Open menu" aria-haspopup="true" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-mobile-menu"><a href="../about.html">About</a><a href="index.html">Procedures</a><a href="macs-facelift.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">MACS Facelift</a><a href="lymphedema-surgery.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Lymphedema Surgery</a><a href="facial-rejuvenation.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Facial Rejuvenation</a><a href="regenerative.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Regenerative Surgery</a><a href="../locations.html">Locations</a><a href="../consultation.html">Consultation</a><a href="../international.html">International Patients</a><a href="../contact.html" class="nav-cta">Book</a></div>
     </div>
     <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
   </div>
@@ -170,46 +182,34 @@
   <div style="max-width:780px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 70px); text-align:center;">
     <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
       <span class="eyebrow enter d1">Regenerative Surgery</span>
-      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.8vw, 64px); line-height:1.15; max-width:660px;">Nanofat <em>grafting</em></h1>
-      <p class="enter d3" style="font-size:16.5px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">Your own fat, emulsified until nothing remains of its structure &mdash; injected not to add volume, but to change the quality of the skin above it.</p>
+      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.8vw, 64px); line-height:1.15; max-width:660px;">Nanofat &amp; structural <em>fat grafting</em></h1>
+      <p class="enter d3" style="font-size:16.5px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">Your own fat, from a single harvest, used two ways &mdash; emulsified to change the quality of the skin above it, or left intact to restore volume beneath it.</p>
     </div>
   </div>
 
   <!-- LEAD IMAGE -->
   <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 120px);">
-    <!-- <img src="images/procedures/nanofat-lead.jpg" alt="" style="width:100%; aspect-ratio:2.4; object-fit:cover;"> -->
-    <div class="ph enter d4" style="aspect-ratio:2.4;">
-      <div class="ph-name">Lead &mdash; operative or clinical setting</div>
-      <div class="ph-spec">2.4:1 &middot; 2400px wide min<br>no identifiable patient</div>
-    </div>
+    <img class="enter d4" src="../images/procedures/nanofat-lead.jpeg" alt="Syringes of processed fat, prepared for grafting" style="width:100%; aspect-ratio:2.4; object-fit:cover;">
   </div>
 
   <!-- WHAT IT IS -->
   <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
     <span class="label reveal">What it is</span>
-    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">Fat is harvested from the abdomen or thigh through a small cannula, then mechanically emulsified &mdash; passed back and forth between syringes and filtered &mdash; until the fat cells themselves are broken down. What is left is a thin fluid containing the stromal vascular fraction: the regenerative cell population that lives among fat cells rather than the fat cells themselves.<br><br>Because it holds no intact adipocytes, nanofat does not add volume and is not a filler. It is placed superficially, in the dermis and just beneath it, where the intention is to influence skin quality &mdash; fine crepey texture, discolouration under the eyes, the surface of a mature scar. Where volume is the goal, structural fat grafting is the different procedure, and the two are often planned together in the same session.<br><br>The technique was described by Dr. Patrick Tonnard and Dr. Alexis Verpaele, whose aesthetic fellowship Dr. Cruz completed from March to June 2025, training with them in Ghent and at E:MC2 in Sint-Martens-Latem, Belgium.<br><br>A candid note on evidence: nanofat is well established in surgical practice and has a coherent biological rationale, but the published outcome data is smaller and shorter-term than for long-standing procedures. Results vary between people, and the degree of change is generally subtle rather than dramatic. Any surgeon who promises you a specific result from it is overstating what is known.</p>
+    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">Fat is harvested from the abdomen or thigh through a small cannula, then mechanically emulsified &mdash; passed back and forth between syringes and filtered &mdash; until the fat cells themselves are broken down. What is left is a thin fluid containing the stromal vascular fraction: the regenerative cell population that lives among fat cells rather than the fat cells themselves.<br><br>Because it holds no intact adipocytes, nanofat does not add volume and is not a filler. It is placed superficially, in the dermis and just beneath it, where the intention is to influence skin quality &mdash; fine crepey texture, discolouration under the eyes, the surface of a mature scar. Where volume is the goal rather than surface quality, structural fat grafting is the companion technique, described below.<br><br>The technique was described by Dr. Patrick Tonnard and Dr. Alexis Verpaele, whose aesthetic fellowship Dr. Cruz completed from March to June 2025, training with them in Ghent and at E:MC2 in Sint-Martens-Latem, Belgium.<br><br>A candid note on evidence: nanofat is well established in surgical practice and has a coherent biological rationale, but the published outcome data is smaller and shorter-term than for long-standing procedures. Results vary between people, and the degree of change is generally subtle rather than dramatic. Any surgeon who promises you a specific result from it is overstating what is known.</p>
+  </div>
+
+  <!-- STRUCTURAL FAT GRAFTING -->
+  <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
+    <span class="label reveal">Structural fat grafting</span>
+    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">Where nanofat changes the surface, structural fat grafting restores what is underneath it. Fat is harvested the same way, but instead of being emulsified down to a fluid, it is left intact and transferred in small parcels to areas that have lost volume &mdash; the face, or a contour altered by prior surgery or reconstruction. Because the fat cells survive the transfer, a portion of the graft persists long-term, unlike a dermal filler.<br><br>The two procedures share a donor site and are often performed in the same sitting: intact fat placed at depth for volume, nanofat placed superficially for skin quality, from one harvest.</p>
   </div>
 
   <!-- PROVENANCE -->
   <div style="background: oklch(97% 0.008 80);">
     <div style="max-width:640px; margin:0 auto; padding:clamp(72px, 12vw, 110px) clamp(24px, 5vw, 56px); text-align:center;">
       <span class="eyebrow" style="color:oklch(38% 0.09 155);">Provenance</span>
-      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">The technique described in Ghent</h3>
-      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:520px; margin:22px auto 0;">Nanofat grafting was developed and published by Dr. Patrick Tonnard and Dr. Alexis Verpaele. Dr. Cruz trained under both during his fellowship with them, March to June 2025, in Ghent and at E:MC2 in Sint-Martens-Latem, Belgium.</p>
-    </div>
-  </div>
-
-  <!-- ILLUSTRATION + DETAIL -->
-  <div style="max-width:1080px; margin:0 auto; padding:clamp(72px, 12vw, 130px) clamp(24px, 5vw, 56px) 0;">
-    <div class="cols" style="display:grid; grid-template-columns: 1fr 1fr; gap:24px;">
-      <div class="ph reveal" style="aspect-ratio:1.35;">
-        <div class="ph-name">Illustration &mdash; emulsification and filtration sequence</div>
-        <div class="ph-spec">line-art &middot; ink + jaguar green<br>can be drawn to match the site</div>
-      </div>
-      <div class="ph reveal" style="aspect-ratio:1.35;">
-        <div class="ph-name">Detail &mdash; harvest cannula or filter set</div>
-        <div class="ph-spec">3:2 &middot; 2000px min &middot; macro</div>
-      </div>
+      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">Both techniques, described in Ghent</h3>
+      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:520px; margin:22px auto 0;">Nanofat grafting was developed and published by Dr. Patrick Tonnard and Dr. Alexis Verpaele; structural fat grafting was part of the same fellowship curriculum. Dr. Cruz trained under both, March to June 2025, in Ghent and at E:MC2 in Sint-Martens-Latem, Belgium.</p>
     </div>
   </div>
 
@@ -223,59 +223,38 @@
       <span class="label" style="font-size:15px;">I</span>
       <div>
         <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Assessment</div>
-        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Whether nanofat is the right tool depends on what is bothering you. Skin texture and discolouration may respond; volume loss and deep folds need a different procedure. [WHAT IS ASSESSED AT CONSULT].</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Whether nanofat, structural grafting, or both is the right tool depends on what is bothering you: skin texture and discolouration point to nanofat, volume loss and deep folds point to structural grafting &mdash; assessed at consultation along with signs of skin atrophy, photodamage and inflammation.</div>
       </div>
     </div>
     <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
       <span class="label" style="font-size:15px;">II</span>
       <div>
         <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Harvest</div>
-        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">A small volume of fat is taken through a fine cannula, usually from the abdomen or inner thigh, under [ANAESTHESIA TYPE]. The donor site needs only a puncture.</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">A small volume of fat is taken through a fine cannula, usually from the abdomen or inner thigh, with anaesthesia chosen on a case-to-case basis. The donor site needs only a puncture.</div>
       </div>
     </div>
     <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
       <span class="label" style="font-size:15px;">III</span>
       <div>
         <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Processing and injection</div>
-        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">The fat is emulsified and filtered at the operating table, then injected superficially into the treatment area with a fine needle or blunt microcannula. Typical session [TYPICAL DURATION].</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Depending on the goal, the fat is either emulsified and filtered for superficial injection, or left intact and placed in small parcels at depth &mdash; sometimes both, from the same harvest. Session length is prescribed case to case.</div>
       </div>
     </div>
     <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(90% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
       <span class="label" style="font-size:15px;">IV</span>
       <div>
         <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Recovery and review</div>
-        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Expect swelling and bruising for [EXPECTED DOWNTIME]. Change in skin quality appears gradually over weeks to months rather than immediately. Review at [FOLLOW-UP SCHEDULE].</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Expect swelling and bruising, resolving over a period assessed case to case. Change in skin quality appears gradually over weeks to months rather than immediately, with follow-up scheduled individually.</div>
       </div>
     </div>
   </div>
 
   <!-- PRACTICAL -->
-  <div style="background: oklch(97% 0.008 80);">
-    <div style="max-width:1080px; margin:0 auto; padding:clamp(72px, 12vw, 120px) clamp(24px, 5vw, 56px);">
-      <div class="cols" style="display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:44px;">
-        <div class="reveal">
-          <span class="label" style="display:block; margin-bottom:12px;">Anaesthesia</span>
-          <div style="font-size:15px; line-height:1.75; color:oklch(34% 0.012 55);">[ANAESTHESIA TYPE]</div>
-        </div>
-        <div class="reveal">
-          <span class="label" style="display:block; margin-bottom:12px;">Time in theatre</span>
-          <div style="font-size:15px; line-height:1.75; color:oklch(34% 0.012 55);">[TYPICAL DURATION]</div>
-        </div>
-        <div class="reveal">
-          <span class="label" style="display:block; margin-bottom:12px;">Back to normal</span>
-          <div style="font-size:15px; line-height:1.75; color:oklch(34% 0.012 55);">[EXPECTED DOWNTIME]</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <p class="label reveal" style="max-width:680px; margin:0 auto; padding:clamp(72px, 12vw, 120px) clamp(24px, 5vw, 56px) 0; text-align:center;">Candidacy for either procedure is determined at an in-person consultation, where anaesthesia, duration and recovery specifics are prescribed on a case-to-case basis.</p>
 
   <!-- RELATED -->
   <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 140px) clamp(24px, 5vw, 56px);">
     <span class="eyebrow" style="display:block; text-align:center; margin-bottom:40px;">Related</span>
-    <a href="#" class="row" style="display:block; padding:28px 0;">
-      <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Structural fat grafting</div>
-      <div style="font-size:13.5px; line-height:1.7; color:oklch(45% 0.01 55);">Volume restoration with intact fat, often planned in the same session.</div>
-    </a>
     <a href="macs-facelift.html" class="row" style="display:block; padding:28px 0;">
       <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">MACS Facelift</div>
       <div style="font-size:13.5px; line-height:1.7; color:oklch(45% 0.01 55);">Nanofat is frequently combined with a facelift to address skin quality the lift cannot.</div>
@@ -291,7 +270,7 @@
     <div class="aurora" style="position:absolute; inset:-25%; pointer-events:none; background: radial-gradient(closest-side, oklch(46% 0.11 155 / 0.45), transparent 72%);"></div>
     <div style="position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:26px;">
       <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:520px;">Discuss whether this is right for you</h2>
-      <a href="#" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
+      <a href="../contact.html" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
     </div>
   </div>
 
@@ -299,6 +278,7 @@
   <div style="padding:clamp(36px, 8vw, 80px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 40px);">
     <div style="max-width:1080px; margin:0 auto; display:flex; flex-wrap:wrap; gap:56px; justify-content:space-between; padding-bottom:44px;">
       <div style="display:flex; flex-direction:column; gap:10px; max-width:280px;">
+        <span style="font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:48px; line-height:1; margin-bottom:2px;">φ</span>
         <span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:19px;">Dr. Pacifico Cruz</span>
         <span style="font-size:13px; color:oklch(48% 0.012 55); line-height:1.7;">Board-certified plastic surgeon &mdash; reconstructive microsurgery and aesthetic facial rejuvenation.</span>
       </div>
@@ -306,7 +286,6 @@
         <span class="label">Practice</span>
         <a href="../about.html" class="footer-link" style="font-size:13.5px;">About</a>
         <a href="index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
-        <a href="../journal.html" class="footer-link" style="font-size:13.5px;">Journal</a>
         <a href="../locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
         <a href="../consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
         <a href="../international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
@@ -316,13 +295,17 @@
         <span class="label">Locations</span>
         <span style="font-size:13.5px; color:oklch(38% 0.012 55);">St. Luke's Medical Center, BGC</span>
         <span style="font-size:13.5px; color:oklch(38% 0.012 55);">Cardinal Santos Medical Center</span>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">Aesthetic Institute of the Philippines</span>
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Contact</span>
-        <span style="font-size:13.5px; color:oklch(38% 0.012 55);">[INQUIRY EMAIL ADDRESS]</span>
-        <div style="display:flex; gap:16px; margin-top:2px;">
-          <a href="#" aria-label="LinkedIn" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="8" y1="10" x2="8" y2="16"/><line x1="8" y1="7" x2="8" y2="7.01"/><path d="M12 16v-3.5a2.5 2.5 0 0 1 5 0V16"/></svg></a>
-          <a href="#" aria-label="Facebook" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="tel:+639681368686" class="footer-link" style="font-size:13.5px;">+63 968 136 8686</a>
+        <span style="font-size:13.5px; color:oklch(38% 0.012 55);"><a href="viber://chat?number=%2B639681368686" style="color:inherit; text-decoration:none;">Viber</a> &middot; <a href="https://wa.me/639681368686" style="color:inherit; text-decoration:none;">WhatsApp</a> &middot; <a href="https://seriousmd.com/doc/pcruz" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;">SeriousMD</a></span>
+        <a href="mailto:hello@pacificocruz.com" class="footer-link" style="font-size:13.5px; display:inline-flex; align-items:center; gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="flex-shrink:0;"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>hello@pacificocruz.com</a>
+        <span class="label" style="margin-top:8px;">Connect</span>
+        <div style="display:flex; gap:16px;">
+          <a href="https://ph.linkedin.com/in/picoycruz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="8" y1="10" x2="8" y2="16"/><line x1="8" y1="7" x2="8" y2="7.01"/><path d="M12 16v-3.5a2.5 2.5 0 0 1 5 0V16"/></svg></a>
+          <a href="https://www.facebook.com/picoycruz/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/picoycruz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
         </div>
       </div>
     </div>
@@ -333,5 +316,40 @@
 
 </div>
 
+
+<script>
+(function(){
+  document.querySelectorAll('.nav-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var nav = btn.closest('.nav');
+      var open = nav.classList.toggle('menu-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  document.querySelectorAll('.nav-mobile-menu a').forEach(function(a){
+    a.addEventListener('click', function(){
+      var nav = a.closest('.nav');
+      nav.classList.remove('menu-open');
+      var btn = nav.querySelector('.nav-toggle');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+  function closeAllNavMenus(){
+    document.querySelectorAll('.nav.menu-open').forEach(function(nav){
+      nav.classList.remove('menu-open');
+      var btn = nav.querySelector('.nav-toggle');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.nav.menu-open').forEach(function(nav){
+      if (!nav.contains(e.target)) closeAllNavMenus();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeAllNavMenus();
+  });
+})();
+</script>
 </body>
 </html>
