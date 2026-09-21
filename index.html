@@ -270,14 +270,13 @@
 
   <!-- HERO (video-background ready) -->
   <div class="hero" style="position:relative; overflow:hidden; min-height:760px; display:flex; align-items:center; justify-content:center; padding:clamp(24px, 5vw, 56px);">
-    <!-- ambient backdrop — sits behind the montage until the video is dropped in -->
+    <!-- ambient backdrop — sits behind the montage video -->
     <div class="aurora" style="position:absolute; inset:-10%; z-index:0; background: radial-gradient(58% 68% at 32% 28%, oklch(42% 0.10 155 / 0.6), transparent 70%), radial-gradient(52% 60% at 76% 68%, oklch(56% 0.02 240 / 0.34), transparent 70%);"></div>
-    <!-- To swap in a video: add images/hero/montage.mp4, images/hero/montage.webm, then replace the img below with the video tag (kept as a comment for reference), keeping this same class/positioning. -->
-    <!-- <video class="kenburns" autoplay="" muted="" loop="" playsinline="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+    <video class="kenburns" autoplay muted loop playsinline preload="auto" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
       <source src="images/hero/montage.webm" type="video/webm">
-      <source src="images/hero/montage.mp4"  type="video/mp4">
-    </video> -->
-    <img class="kenburns" src="images/hero/hero-portrait.jpeg" alt="Dr. Pacifico Cruz" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 20%; z-index:0;">
+      <source src="images/hero/montage.mp4" type="video/mp4">
+      <img class="kenburns" src="images/hero/hero-portrait.jpeg" alt="Dr. Pacifico Cruz" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 20%; z-index:0;">
+    </video>
     <div style="position:absolute; inset:0; background:linear-gradient(180deg, oklch(15% 0.035 155 / 0.7), oklch(15% 0.035 155 / 0.88)); z-index:1;"></div>
     <div class="parallax" style="position:relative; z-index:2; max-width:820px; margin:0 auto; text-align:center;">
       <div style="display:flex; flex-direction:column; align-items:center; gap:30px;">
