@@ -651,6 +651,24 @@
   document.addEventListener('keydown', function(e){
     if (e.key === 'Escape') closeAllNavMenus();
   });
+
+  // Some mobile browsers (Low Power Mode, in-app browsers, Data Saver)
+  // silently block the autoplay attribute even on a muted/inline video.
+  // Nudge playback on load and retry on the first tap/scroll.
+  var heroVideo = document.querySelector('.hero video.kenburns');
+  if (heroVideo) {
+    var tryPlay = function(){
+      var p = heroVideo.play();
+      if (p && typeof p.catch === 'function') p.catch(function(){});
+    };
+    tryPlay();
+    ['touchstart', 'click', 'scroll'].forEach(function(evt){
+      document.addEventListener(evt, function retryPlay(){
+        if (heroVideo.paused) tryPlay();
+        if (!heroVideo.paused) document.removeEventListener(evt, retryPlay);
+      }, { passive: true, once: false });
+    });
+  }
 })();
 </script>
 </body>
