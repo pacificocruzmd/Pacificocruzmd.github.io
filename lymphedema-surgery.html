@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>International Patients — Dr. Pacifico Cruz, MD</title>
-<meta name="description" content="Remote consultation and travel planning for patients coming to Metro Manila from across the region and from Filipino communities abroad.">
-<link rel="canonical" href="https://pacificocruz.com/international.html">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Lymphedema Surgery — Dr. Pacifico Cruz, MD</title>
+<meta name="description" content="Microsurgical treatment for chronic limb swelling from lymphatic dysfunction, most often after cancer treatment. Flagship consultancy at St. Luke’s BGC.">
+<link rel="canonical" href="https://pacificocruz.com/procedures/lymphedema-surgery.html">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
-<meta property="og:title" content="International Patients — Dr. Pacifico Cruz, MD">
-<meta property="og:description" content="Remote consultation and travel planning for patients coming to Metro Manila from across the region and from Filipino communities abroad.">
-<meta property="og:url" content="https://pacificocruz.com/international.html">
+<meta property="og:title" content="Lymphedema Surgery — Dr. Pacifico Cruz, MD">
+<meta property="og:description" content="Microsurgical treatment for chronic limb swelling from lymphatic dysfunction, most often after cancer treatment. Flagship consultancy at St. Luke’s BGC.">
+<meta property="og:url" content="https://pacificocruz.com/procedures/lymphedema-surgery.html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="International Patients — Dr. Pacifico Cruz, MD">
-<meta name="twitter:description" content="Remote consultation and travel planning for patients coming to Metro Manila from across the region and from Filipino communities abroad.">
+<meta name="twitter:title" content="Lymphedema Surgery — Dr. Pacifico Cruz, MD">
+<meta name="twitter:description" content="Microsurgical treatment for chronic limb swelling from lymphatic dysfunction, most often after cancer treatment. Flagship consultancy at St. Luke’s BGC.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,7 +93,6 @@
     /* scroll-driven — degrades to fully visible where unsupported */
     @supports (animation-timeline: view()) {
       .row, .reveal { animation: rise 1s cubic-bezier(.16,1,.3,1) both; animation-timeline: view(); animation-range: entry 2% cover 22%; }
-      .draw { animation-timeline: view(); animation-range: entry 0% cover 45%; }
       .progress { animation: grow linear both; animation-timeline: scroll(root block); }
       .ping { animation: ping 1s linear both; animation-timeline: view(); animation-range: entry 20% cover 60%; }
       .glow { animation: glow 1s linear both; animation-timeline: view(); animation-range: entry 10% cover 70%; }
@@ -136,18 +135,6 @@
     }
     .btn-primary:hover::before { transform: translate(0, 0); opacity: 0; }
 
-    /* ——— LUZ: a figure travelling the route as you scroll ——— */
-    .arc-scope { view-timeline-name: --arc; view-timeline-axis: block; }
-    @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
-    .travel { offset-rotate: auto; offset-distance: 50%; }
-    @supports not (offset-path: path("M0 0")) { .travel { display: none; } }
-    @supports (animation-timeline: view()) {
-      .travel { animation: travel linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .travel { animation: none !important; offset-distance: 50% !important; }
-    }
-
     /* ——— RESPONSIVE ——— */
     @media (max-width: 900px) {
       .cols { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
@@ -185,108 +172,162 @@
 
   <!-- NAV -->
   <div class="nav" style="position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
-    <a href="index.html" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
+    <a href="../index.html" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
     <div style="position:relative;">
       <button class="nav-toggle" aria-label="Open menu" aria-haspopup="true" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-mobile-menu"><a href="about.html">About</a><a href="index.html#lymphedema" style="color:oklch(38% 0.09 155); font-weight:500;">Lymphedema</a><a href="procedures/index.html">Procedures</a><a href="procedures/macs-facelift.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">MACS Facelift</a><a href="procedures/lymphedema-surgery.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Lymphedema Surgery</a><a href="procedures/facial-rejuvenation.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Facial Rejuvenation</a><a href="procedures/regenerative.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Regenerative Surgery</a><a href="procedures/nanofat.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Nanofat &amp; Structural Fat Grafting</a><a href="procedures/scar-and-burn-care.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Scar, Burn &amp; Keloid Care</a><a href="procedures/rhinoplasty.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Rhinoplasty</a><a href="locations.html">Locations</a><a href="consultation.html">Consultation</a><a href="international.html" class="is-active">International Patients</a><a href="contact.html" class="nav-cta">Book</a></div>
+      <div class="nav-mobile-menu"><a href="../about.html">About</a><a href="../index.html#lymphedema" style="color:oklch(38% 0.09 155); font-weight:500;">Lymphedema</a><a href="index.html">Procedures</a><a href="macs-facelift.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">MACS Facelift</a><a href="lymphedema-surgery.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Lymphedema Surgery</a><a href="facial-rejuvenation.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Facial Rejuvenation</a><a href="regenerative.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Regenerative Surgery</a><a href="nanofat.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Nanofat &amp; Structural Fat Grafting</a><a href="scar-and-burn-care.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Scar, Burn &amp; Keloid Care</a><a href="rhinoplasty.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Rhinoplasty</a><a href="../locations.html">Locations</a><a href="../consultation.html">Consultation</a><a href="../international.html">International Patients</a><a href="../contact.html" class="nav-cta">Book</a></div>
     </div>
     <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
   </div>
 
   <!-- HEADER -->
-  <div style="max-width:760px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 70px); text-align:center;">
-    <div style="display:flex; flex-direction:column; align-items:center; gap:26px;">
-      <span class="eyebrow enter d1">Patients Travelling from Abroad</span>
-      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.6vw, 62px); line-height:1.15; max-width:620px;">Care that begins <em>before you land</em></h1>
-      <p class="enter d3" style="font-size:16px; line-height:1.85; color:oklch(38% 0.012 55); max-width:500px;">
-        Patients come to Metro Manila from across the region and from Filipino
-        communities abroad. The consultation, the planning and the follow-up are
-        built to work at a distance &mdash; only the surgery itself asks you to be here.
-      </p>
+  <div style="max-width:780px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 70px); text-align:center;">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
+      <span class="eyebrow enter d1">Reconstructive &amp; Microsurgery</span>
+      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.8vw, 64px); line-height:1.15; max-width:660px;">Lymphedema <em>surgery</em></h1>
+      <p class="enter d3" style="font-size:16.5px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">Microsurgical treatment for chronic limb swelling caused by lymphatic dysfunction &mdash; most often after cancer treatment. The flagship consultancy at St. Luke's BGC.</p>
+    </div>
+  </div>
+
+  <!-- LEAD IMAGE -->
+  <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 120px);">
+<picture><source srcset="../images/procedures/lymphedema-lead.webp" type="image/webp"><img decoding="async" class="enter d4" src="../images/procedures/lymphedema-lead.jpeg" alt="Lymphedema microsurgery, operative field" style="width:100%; aspect-ratio:2.4; object-fit:cover;"></picture>
+  </div>
+
+  <!-- WHAT IT IS -->
+  <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
+    <span class="label reveal">What it is</span>
+    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">When lymphatic channels are blocked or removed, fluid that should drain away collects in the limb. Compression and therapy manage that; surgery attempts to restore an outflow.<br><br>Two microsurgical approaches are used. Lymphaticovenous anastomosis joins blocked lymphatic channels directly to nearby small veins, giving the fluid a route out &mdash; the vessels involved are often well under a millimetre across. Vascularised lymph node transfer moves healthy lymph nodes, with their blood supply, into the affected limb. Which is appropriate depends on stage and on what imaging shows, assessed with indocyanine green lymphography and high-frequency ultrasound.</p>
+  </div>
+
+  <!-- CLINICAL OVERVIEW -->
+  <div style="max-width:820px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">Clinical Overview</span>
+      <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">Understanding Lymphedema</h2>
+    </div>
+
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">I</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:10px;">How Common It Is</div>
+        <div style="font-size:15px; line-height:1.85; color:oklch(34% 0.012 55); max-width:600px;">Lymphedema affects an estimated 250 million people worldwide. Around the world, the most common cause is a parasitic infection called lymphatic filariasis &mdash; but in a surgical practice like this one, the more familiar story is lymphedema that develops after cancer treatment. It shows up most often after breast cancer surgery: roughly 20&ndash;30% of patients who have lymph nodes removed from the armpit go on to develop it, and even the less invasive sentinel node biopsy carries a smaller, real risk of around 5&ndash;7%. Radiation to the area raises that risk further. Cancer surgery involving the pelvis, urinary tract, or head and neck can lead to lymphedema there too, for the same underlying reason.</div>
+      </div>
+    </div>
+
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">II</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:10px;">What Causes It</div>
+        <div style="font-size:15px; line-height:1.85; color:oklch(34% 0.012 55); max-width:600px;">Some people are simply born with a lymphatic system that doesn&rsquo;t work quite right &mdash; this is called primary lymphedema, and it&rsquo;s uncommon. Depending on the type, it can show up at birth, around puberty, or later in adulthood. Far more often, lymphedema is secondary, meaning something damaged lymphatics that used to work fine. The usual causes are cancer surgery, radiation, injury, repeated infections, or long-standing vein problems that eventually affect the lymphatics too. Worldwide, the single biggest cause is filarial infection, though that&rsquo;s rarely what brings a patient to this clinic.</div>
+      </div>
+    </div>
+
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">III</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:10px;">What&rsquo;s Happening in the Limb</div>
+        <div style="font-size:15px; line-height:1.85; color:oklch(34% 0.012 55); max-width:600px;">Normally, the lymphatic system quietly drains protein-rich fluid out of the tissues and back into the bloodstream. When that system is overwhelmed &mdash; too few working channels, faulty valves, or a blockage &mdash; the fluid has nowhere to go and builds up under the skin. Left alone, that ongoing buildup causes inflammation, and over time the tissue itself starts to change: soft, reversible swelling can gradually turn into firmer, fibrous tissue that&rsquo;s much harder to treat. This is really the whole reason timing matters &mdash; the earlier lymphedema is addressed, surgically or not, the better and more lasting the results tend to be.</div>
+      </div>
+    </div>
+
+    <div style="margin:16px 0 40px;">
+<picture><source srcset="../images/procedures/lymphedema-detail.webp" type="image/webp">      <img loading="lazy" decoding="async" src="../images/procedures/lymphedema-detail.jpeg" alt="Dr. Cruz presenting on lymphedema surgery in the Philippine context" style="width:100%; aspect-ratio:2.4; object-fit:cover; border-radius:4px;"></picture>
+      <div class="label" style="text-align:center; margin-top:12px;">Presenting on lymphedema surgery in the Philippine context</div>
+    </div>
+
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">IV</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:10px;">Non-Surgical Care</div>
+        <div style="font-size:15px; line-height:1.85; color:oklch(34% 0.012 55); max-width:600px;">Before surgery is ever on the table &mdash; and often alongside it &mdash; the first line of treatment is complete decongestive therapy. It runs in two stages: an intensive stretch of hands-on lymphatic drainage massage, snug compression bandaging, skin care and guided exercise, followed by an ongoing maintenance phase built around a properly fitted compression garment, self-massage and staying active. Pneumatic compression devices can help at home between visits. Skin and nail care matter more than people expect &mdash; an infection can set back months of progress, and damaged lymphatics make infection more likely in the first place, so it&rsquo;s worth breaking that cycle early. Keeping weight in a healthy range helps too, since extra weight measurably makes lymphedema worse.</div>
+      </div>
+    </div>
+
+    <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">V</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:10px;">Surgical Options</div>
+        <div style="font-size:15px; line-height:1.85; color:oklch(34% 0.012 55); max-width:600px;">When surgery makes sense, it generally falls into one of two categories. The first restores function: lymphaticovenous anastomosis reroutes blocked lymphatic channels into nearby tiny veins, giving fluid a new way out, and works best when some lymphatic function is still intact. Vascularised lymph node transfer takes healthy lymph nodes, with their own blood supply, and moves them into the affected area &mdash; this can sometimes be combined with breast reconstruction for appropriate breast cancer patients. The second category focuses on reducing the fibrous, fatty tissue that builds up once the condition is more advanced &mdash; mainly through targeted liposuction, with more extensive excisional surgery reserved for the most severe, long-standing cases. Which approach fits is decided after imaging &mdash; indocyanine green lymphography and high-frequency ultrasound &mdash; maps out exactly how the lymphatics are functioning.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROVENANCE -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:640px; margin:0 auto; padding:clamp(72px, 12vw, 110px) clamp(24px, 5vw, 56px); text-align:center;">
+      <span class="eyebrow" style="color:oklch(38% 0.09 155);">Provenance</span>
+      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">Trained under Dr. Rei Ogawa</h3>
+      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:520px; margin:22px auto 0;">Lymphedema surgery was part of Dr. Cruz's year-long fellowship (2024&ndash;2025) under Dr. Rei Ogawa at Nippon Medical School, Tokyo, and is now the flagship of the practice, based at St. Luke's Medical Center, BGC. Cases are managed with a multidisciplinary team, including colleagues in oncology, rehabilitation medicine, vascular specialists, and certified lymphedema therapists.</p>
     </div>
   </div>
 
   <!-- THE PROCESS -->
-  <div id="international" style="background: oklch(97% 0.008 80);">
-    <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
-      <!-- FLIGHT ARC -->
-      <div class="arc-scope" style="display:flex; flex-direction:column; align-items:center; gap:18px; margin-bottom:72px;">
-        <svg width="100%" height="130" viewBox="0 0 640 130" fill="none" style="max-width:560px;">
-      <!-- abstract aircraft on the approach -->
-      <g class="travel" style="offset-path: path('M40 96 C 180 6, 460 6, 600 82');">
-        <path d="M13 0 L-11 -7 L-6 0 L-11 7 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-      </g>
-          <path class="draw" d="M40 96 C 180 6, 460 6, 600 82" stroke="oklch(16% 0.006 50)" stroke-width="1" opacity="0.4" style="stroke-dasharray:640; stroke-dashoffset:640;"/>
-          <circle cx="40" cy="96" r="2.5" fill="oklch(58% 0.008 240)"/>
-          <circle class="ping" cx="600" cy="82" r="4.5" fill="none" stroke="oklch(38% 0.09 155)" stroke-width="1"/>
-          <circle cx="600" cy="82" r="4.5" fill="none" stroke="oklch(38% 0.09 155)" stroke-width="1" opacity="0.45"/>
-          <circle class="glow" cx="600" cy="82" r="2.5" fill="oklch(38% 0.09 155)"/>
-        </svg>
-        <div class="reveal" style="display:flex; justify-content:space-between; width:100%; max-width:560px; gap:20px;">
-          <span class="label" style="color:oklch(58% 0.008 240);">Wherever you are</span>
-          <span class="label" style="color:oklch(38% 0.09 155);">Metro Manila</span>
-        </div>
-      </div>
-
+  <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">Start to Finish</span>
+      <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">How it runs</h2>
+    </div>
       <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
         <span class="label" style="font-size:15px;">I</span>
         <div>
-          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Begin with a remote consultation</div>
-          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Send your history and photographs through the inquiry form. A video consultation follows &mdash; candidacy, the options open to you, and the outcomes that are realistic &mdash; before you commit to any travel. Remote consultation fees apply.</div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Consultation</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Assessment in person, a discussion of what is realistic, and a plan. Nothing is booked at the first visit unless you want it to be.</div>
         </div>
       </div>
       <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
         <span class="label" style="font-size:15px;">II</span>
         <div>
-          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Plan the stay around the procedure</div>
-          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Once a plan is agreed you will know how long to be in Metro Manila: pre-operative assessment, the procedure itself, and the post-operative checks that must happen before you are cleared to fly. Length of recovery and stay is individualized to each patient.</div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">The procedure</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Performed at St. Luke's Medical Center, BGC or Cardinal Santos Medical Center; duration and anaesthesia are prescribed on a case-to-case basis.</div>
         </div>
       </div>
       <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
         <span class="label" style="font-size:15px;">III</span>
         <div>
-          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">While you are here</div>
-          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Surgery and consultations take place at St. Luke's Medical Center, BGC or Cardinal Santos Medical Center. The practice can advise on accommodation close to the hospital and what to arrange before you arrive.</div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Early recovery</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">What to expect in the first week &mdash; dressings, swelling, activity limits, time off work &mdash; is reviewed individually before you leave the clinic.</div>
         </div>
       </div>
       <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
         <span class="label" style="font-size:15px;">IV</span>
         <div>
-          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Follow-up after you fly home</div>
-          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Recovery is followed remotely once you return, with scheduled video check-ins and a direct line for questions. Where continuing local care is needed, the practice will coordinate with a physician where you live.</div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Follow-up</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">A follow-up schedule is set at your first post-operative visit, individualized to the procedure. For patients travelling from abroad, follow-up continues by video once you are home.</div>
         </div>
       </div>
 
-      <!-- PRACTICAL DETAIL -->
-      <div class="cols" style="display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:44px; margin-top:64px; text-align:center;">
-        <div class="reveal">
-          <div class="label" style="margin-bottom:10px;">Consultations In</div>
-          <div style="font-size:14.5px; color:oklch(32% 0.01 55); line-height:1.6;">English and Filipino</div>
-        </div>
-        <div class="reveal">
-          <div class="label" style="margin-bottom:10px;">Manila Time</div>
-          <div style="font-size:14.5px; color:oklch(32% 0.01 55); line-height:1.6;">UTC+8 &mdash; video consultations set around your time zone</div>
-        </div>
-        <div class="reveal">
-          <div class="label" style="margin-bottom:10px;">International Enquiries</div>
-          <div style="font-size:14.5px; color:oklch(32% 0.01 55); line-height:1.6;"><a href="mailto:hello@pacificocruz.com" style="color:inherit; text-decoration:none; display:inline-flex; align-items:center; gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="flex-shrink:0;"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>hello@pacificocruz.com</a> &middot; <a href="https://wa.me/639681368686" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;">WhatsApp +63 968 136 8686</a></div>
-        </div>
-      </div>
+    <!-- PRACTICAL -->
+    <p class="label reveal" style="text-align:center; margin-top:40px; max-width:520px; margin-left:auto; margin-right:auto;">Candidacy for any procedure is determined at an in-person consultation, where anaesthesia, duration and recovery specifics are prescribed on a case-to-case basis. Not every procedure suits every patient.</p>
+  </div>
 
-      <div class="reveal" style="display:flex; align-items:center; justify-content:center; gap:28px; margin-top:72px; flex-wrap:wrap;">
-        <a href="contact.html" class="btn-primary">Request a Remote Consultation</a>
-        <a href="consultation.html" class="link-quiet">What to expect at consultation</a>
+  <!-- RELATED -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 120px) clamp(24px, 5vw, 56px);">
+      <span class="eyebrow" style="display:block; text-align:center; margin-bottom:40px;">Related</span>
+      <div class="row" style="padding:26px 0; display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Complex Tissue Reconstruction</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">Free tissue transfer and microsurgical repair</div>
+        </div>
+        <a href="tissue-reconstruction.html" class="link-quiet">Read on</a>
+      </div>
+      <div class="row" style="padding:26px 0; border-bottom:1px solid oklch(88% 0.006 80); display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Travelling from abroad</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">How care works at a distance</div>
+        </div>
+        <a href="../international.html" class="link-quiet">Read on</a>
       </div>
     </div>
   </div>
-
 
   <!-- CTA -->
   <div style="position:relative; overflow:hidden; padding:clamp(72px, 12vw, 170px) clamp(24px, 5vw, 56px); background: oklch(15% 0.035 155); text-align:center;">
     <div class="aurora" style="position:absolute; inset:-25%; pointer-events:none; background: radial-gradient(closest-side, oklch(46% 0.11 155 / 0.45), transparent 72%);"></div>
     <div style="position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:26px;">
-      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:520px;">Let's start with a video consultation</h2>
-      <a href="contact.html" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
+      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:520px;">Discuss whether this is right for you</h2>
+      <a href="../contact.html" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
       <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:6px; font-size:14px; color:oklch(84% 0.005 240);">
         <a href="tel:+639681368686" style="color:inherit; text-decoration:none;">+63 968 136 8686</a>
         <span style="opacity:0.5;">&middot;</span>
@@ -309,12 +350,12 @@
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Practice</span>
-        <a href="about.html" class="footer-link" style="font-size:13.5px;">About</a>
-        <a href="procedures/index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
-        <a href="locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
-        <a href="consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
-        <a href="international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
-        <a href="contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
+        <a href="../about.html" class="footer-link" style="font-size:13.5px;">About</a>
+        <a href="index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
+        <a href="../locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
+        <a href="../consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
+        <a href="../international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
+        <a href="../contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Locations</span>

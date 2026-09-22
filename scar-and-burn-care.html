@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Locations — Dr. Pacifico Cruz, MD</title>
-<meta name="description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
-<link rel="canonical" href="https://pacificocruz.com/locations.html">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Scar, Burn & Keloid Care — Dr. Pacifico Cruz, MD</title>
+<meta name="description" content="Reconstruction for scars that have healed badly, burns that have contracted, and keloids that keep recurring — each addressed with the approach it actually needs.">
+<link rel="canonical" href="https://pacificocruz.com/procedures/scar-and-burn-care.html">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
-<meta property="og:title" content="Locations — Dr. Pacifico Cruz, MD">
-<meta property="og:description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
-<meta property="og:url" content="https://pacificocruz.com/locations.html">
+<meta property="og:title" content="Scar, Burn & Keloid Care — Dr. Pacifico Cruz, MD">
+<meta property="og:description" content="Reconstruction for scars that have healed badly, burns that have contracted, and keloids that keep recurring — each addressed with the approach it actually needs.">
+<meta property="og:url" content="https://pacificocruz.com/procedures/scar-and-burn-care.html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Locations — Dr. Pacifico Cruz, MD">
-<meta name="twitter:description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
+<meta name="twitter:title" content="Scar, Burn & Keloid Care — Dr. Pacifico Cruz, MD">
+<meta name="twitter:description" content="Reconstruction for scars that have healed badly, burns that have contracted, and keloids that keep recurring — each addressed with the approach it actually needs.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,7 +93,6 @@
     /* scroll-driven — degrades to fully visible where unsupported */
     @supports (animation-timeline: view()) {
       .row, .reveal { animation: rise 1s cubic-bezier(.16,1,.3,1) both; animation-timeline: view(); animation-range: entry 2% cover 22%; }
-      .draw { animation-timeline: view(); animation-range: entry 0% cover 45%; }
       .progress { animation: grow linear both; animation-timeline: scroll(root block); }
       .ping { animation: ping 1s linear both; animation-timeline: view(); animation-range: entry 20% cover 60%; }
       .glow { animation: glow 1s linear both; animation-timeline: view(); animation-range: entry 10% cover 70%; }
@@ -136,18 +135,6 @@
     }
     .btn-primary:hover::before { transform: translate(0, 0); opacity: 0; }
 
-    /* ——— LUZ: a figure travelling the route as you scroll ——— */
-    .arc-scope { view-timeline-name: --arc; view-timeline-axis: block; }
-    @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
-    .travel { offset-rotate: auto; offset-distance: 50%; }
-    @supports not (offset-path: path("M0 0")) { .travel { display: none; } }
-    @supports (animation-timeline: view()) {
-      .travel { animation: travel linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .travel { animation: none !important; offset-distance: 50% !important; }
-    }
-
     /* ——— RESPONSIVE ——— */
     @media (max-width: 900px) {
       .cols { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
@@ -181,113 +168,149 @@
 </head>
 <body>
 
-
 <div style="width:100%; background: oklch(99% 0.004 90);">
 
   <!-- NAV -->
   <div class="nav" style="position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(24px, 5vw, 64px); height:96px; background: oklch(99% 0.004 90 / 0.9); backdrop-filter: blur(6px);">
-    <a href="index.html" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
+    <a href="../index.html" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
     <div style="position:relative;">
       <button class="nav-toggle" aria-label="Open menu" aria-haspopup="true" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-mobile-menu"><a href="about.html">About</a><a href="index.html#lymphedema" style="color:oklch(38% 0.09 155); font-weight:500;">Lymphedema</a><a href="procedures/index.html">Procedures</a><a href="procedures/macs-facelift.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">MACS Facelift</a><a href="procedures/lymphedema-surgery.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Lymphedema Surgery</a><a href="procedures/facial-rejuvenation.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Facial Rejuvenation</a><a href="procedures/regenerative.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Regenerative Surgery</a><a href="procedures/nanofat.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Nanofat &amp; Structural Fat Grafting</a><a href="procedures/scar-and-burn-care.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Scar, Burn &amp; Keloid Care</a><a href="procedures/rhinoplasty.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Rhinoplasty</a><a href="locations.html" class="is-active">Locations</a><a href="consultation.html">Consultation</a><a href="international.html">International Patients</a><a href="contact.html" class="nav-cta">Book</a></div>
+      <div class="nav-mobile-menu"><a href="../about.html">About</a><a href="../index.html#lymphedema" style="color:oklch(38% 0.09 155); font-weight:500;">Lymphedema</a><a href="index.html">Procedures</a><a href="macs-facelift.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">MACS Facelift</a><a href="lymphedema-surgery.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Lymphedema Surgery</a><a href="facial-rejuvenation.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Facial Rejuvenation</a><a href="regenerative.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Regenerative Surgery</a><a href="nanofat.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Nanofat &amp; Structural Fat Grafting</a><a href="scar-and-burn-care.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Scar, Burn &amp; Keloid Care</a><a href="rhinoplasty.html" style="padding-left:14px; font-size:13.5px; color:oklch(48% 0.012 55);">Rhinoplasty</a><a href="../locations.html">Locations</a><a href="../consultation.html">Consultation</a><a href="../international.html">International Patients</a><a href="../contact.html" class="nav-cta">Book</a></div>
     </div>
     <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
   </div>
 
   <!-- HEADER -->
-  <div style="max-width:760px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(72px, 12vw, 100px); text-align:center;">
-    <div style="display:flex; flex-direction:column; align-items:center; gap:26px;">
-      <span class="eyebrow enter d1">Locations</span>
-      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.6vw, 62px); line-height:1.15; max-width:560px;">Where to find him</h1>
-      <p class="enter d3" style="font-size:16px; line-height:1.85; color:oklch(38% 0.012 55); max-width:460px;">
-        A personal practice, not a single clinic &mdash; Dr. Cruz consults across partner
-        hospitals in Metro Manila.
-      </p>
+  <div style="max-width:780px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px) clamp(36px, 8vw, 70px); text-align:center;">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
+      <span class="eyebrow enter d1">Reconstructive &amp; Microsurgery</span>
+      <h1 class="enter d2" style="font-weight:300; font-size:clamp(36px, 4.8vw, 64px); line-height:1.15; max-width:660px;">Scar, burn &amp; <em>keloid care</em></h1>
+      <p class="enter d3" style="font-size:16.5px; line-height:1.85; color:oklch(38% 0.012 55); max-width:520px;">Three related problems in wound healing &mdash; a scar that has healed badly, a burn that has contracted, a keloid that keeps recurring &mdash; each asking a different kind of care.</p>
     </div>
   </div>
 
-  <!-- QUIET MAP MOMENT -->
-  <div class="arc-scope" style="max-width:640px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(36px, 8vw, 90px); display:flex; flex-direction:column; align-items:center; gap:22px;">
-    <svg width="100%" height="140" viewBox="0 0 560 140" fill="none">
-      <!-- abstract car, five strokes, riding the route -->
-      <g class="travel" style="offset-path: path('M0 110 C 90 70, 190 130, 260 88 S 420 30, 550 55');">
-        <path d="M-11 2 L-11 -1 L-6 -1 L-3 -5 L4 -5 L7 -1 L11 -1 L11 2 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-        <circle cx="-6" cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-        <circle cx="6"  cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-      </g>
-      <path class="draw" d="M0 110 C 90 70, 190 130, 260 88 S 420 30, 550 55" stroke="oklch(16% 0.006 50)" stroke-width="1" opacity="0.4" style="stroke-dasharray:760; stroke-dashoffset:760;"/>
-      <g transform="translate(240,88)">
-        <circle class="ping" r="4" fill="none" stroke="oklch(38% 0.09 155)" stroke-width="1"/>
-        <circle r="4" fill="none" stroke="oklch(38% 0.09 155)" stroke-width="1"/>
-        <circle class="glow" r="2" fill="oklch(38% 0.09 155)"/>
-      </g>
-      <g transform="translate(430,40)">
-        <circle class="ping" r="4" fill="none" stroke="oklch(58% 0.008 240)" stroke-width="1" style="animation-delay:1.9s;"/>
-        <circle r="4" fill="none" stroke="oklch(58% 0.008 240)" stroke-width="1" opacity="0.85"/>
-        <circle class="glow" r="2" fill="oklch(58% 0.008 240)" style="animation-delay:1.9s;"/>
-      </g>
-    </svg>
-    <span class="label" style="text-align:center; max-width:420px;">Three consultation points across Metro Manila. Schematic, not to scale.</span>
+  <!-- LEAD IMAGE -->
+  <div style="max-width:1080px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 120px);">
+<picture><source srcset="../images/procedures/scar-keloid-lead.webp" type="image/webp"><img decoding="async" class="enter d4" src="../images/procedures/scar-keloid-lead.jpeg" alt="Dr. Cruz with the fellowship team, Nippon Medical School, Tokyo" style="width:100%; aspect-ratio:2.4; object-fit:cover;"></picture>
   </div>
 
-  <!-- LOCATION LIST -->
-  <div style="max-width:820px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 150px);">
-    <div class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
-      <div>
-        <div class="label" style="margin-bottom:10px;">Flagship &middot; Lymphedema Surgery Consultancy</div>
-        <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">St. Luke's Medical Center &mdash; BGC</div>
-        <div style="font-size:14px; line-height:1.9; color:oklch(42% 0.012 55);">
-          Suite 1036, Medical Arts Building<br>
-          Taguig, Metro Manila<br>
-          By appointment
-        </div>
-      </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
-        <a href="https://share.google/BSbWC3oVjsTA5mUBt" target="_blank" rel="noopener" class="link-quiet">Get Directions</a>
-      </div>
-    </div>
-    <div class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
-      <div>
-        <div class="label" style="margin-bottom:10px;">Consultation</div>
-        <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">Cardinal Santos Medical Center</div>
-        <div style="font-size:14px; line-height:1.9; color:oklch(42% 0.012 55);">
-          Suite 176, Medical Arts Building<br>
-          Wilson St., Greenhills, San Juan<br>
-          By appointment
-        </div>
-      </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
-        <a href="https://share.google/akMbFN1fbXXR5gn6f" target="_blank" rel="noopener" class="link-quiet">Get Directions</a>
-      </div>
-    </div>
-    <div class="row" style="padding:44px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
-      <div>
-        <div class="label" style="margin-bottom:10px;">Consultation &middot; Aesthetic Procedures</div>
-        <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">Aesthetic Institute of the Philippines</div>
-        <div style="font-size:14px; line-height:1.9; color:oklch(42% 0.012 55);">
-          15 Eisenhower Street<br>
-          Greenhills, San Juan<br>
-          By appointment
-        </div>
-      </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
-        <a href="https://share.google/TuN4ad4UVRUFHvnI2" target="_blank" rel="noopener" class="link-quiet">Get Directions</a>
-      </div>
-    </div>
+  <!-- WHAT IT IS -->
+  <div style="max-width:680px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 130px);">
+    <span class="label reveal">What it is</span>
+    <p class="reveal" style="font-size:16px; line-height:2; color:oklch(30% 0.012 55); margin-top:20px;">Scar revision aims to change how a scar matures, not simply to cut it out; tension across a healing wound is often what made it thick in the first place, so the plan usually addresses that as much as the scar itself.<br><br>Burn reconstruction deals with what a healed burn leaves behind &mdash; contracture limiting movement, loss of tissue, altered surface &mdash; through release, grafting and flap reconstruction.<br><br>A keloid is a distinct problem: scar tissue that keeps growing beyond the margin of the original wound, unlike an ordinary or even a raised scar that stays within it. It characteristically returns after being cut out on its own, so management is rarely a single step &mdash; it combines modalities chosen against how the keloid actually presents.</p>
   </div>
 
-  <!-- ADDITIONAL PARTNER LOCATIONS -->
+  <!-- PROVENANCE -->
   <div style="background: oklch(97% 0.008 80);">
-    <div style="max-width:640px; margin:0 auto; padding:clamp(36px, 8vw, 70px) clamp(24px, 5vw, 56px); text-align:center;">
-      <p style="font-size:14.5px; line-height:1.85; color:oklch(38% 0.012 55);">
-        Dr. Cruz also consults at additional partner hospitals across Metro Manila.
-        Ask at booking for the location
-        most convenient for you.
-      </p>
-      <p style="font-size:14.5px; line-height:1.85; color:oklch(38% 0.012 55); margin-top:22px;">
-        Travelling from outside the Philippines? The consultation and follow-up are
-        handled remotely &mdash; <a href="international.html" class="link-quiet">see how international patients are cared for</a>.
-      </p>
+    <div style="max-width:640px; margin:0 auto; padding:clamp(72px, 12vw, 110px) clamp(24px, 5vw, 56px); text-align:center;">
+      <span class="eyebrow" style="color:oklch(38% 0.09 155);">Provenance</span>
+      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">Trained under Dr. Rei Ogawa</h3>
+      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:520px; margin:22px auto 0;">Dr. Cruz trained at Nippon Medical School under Dr. Rei Ogawa, whose work on scar and keloid management is internationally recognised &mdash; part of a year-long fellowship (2024&ndash;2025) spanning reconstructive surgery, microsurgery, keloid management and lymphedema. Cases are managed with a multidisciplinary team where appropriate.</p>
+    </div>
+  </div>
+
+  <!-- MODALITIES (KELOIDS) -->
+  <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">For Keloids Specifically</span>
+      <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">Combining modalities</h2>
+    </div>
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">I</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Steroid plasters &amp; injections</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Corticosteroid-impregnated silicone plasters and intralesional corticosteroid injections, often the first line for smaller or earlier keloids, usually paired with sustained pressure, as part of a multimodal steroid regimen.</div>
+      </div>
+    </div>
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">II</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Surgery</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Surgical excision of the keloid; on its own it recurs frequently, which is why it is rarely used without a second modality alongside it, and the approach is planned case to case in consultation.</div>
+      </div>
+    </div>
+    <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">III</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Laser</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Laser treatment used to flatten a keloid and reduce its redness and texture, either alone for milder cases or layered with other modalities, chosen case to case in consultation.</div>
+      </div>
+    </div>
+    <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+      <span class="label" style="font-size:15px;">IV</span>
+      <div>
+        <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Radiotherapy</div>
+        <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Low-dose adjuvant radiotherapy delivered after excision to reduce the chance of recurrence in keloids judged higher-risk, coordinated with a radiation oncology partner as part of a multidisciplinary treatment plan.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HONEST LIMITS -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:640px; margin:0 auto; padding:clamp(72px, 12vw, 110px) clamp(24px, 5vw, 56px); text-align:center;">
+      <span class="eyebrow" style="color:oklch(38% 0.09 155);">What is and is not known</span>
+      <h3 style="font-weight:300; font-size:clamp(24px, 2.6vw, 32px); line-height:1.35; margin:18px auto 0; max-width:520px;">No single treatment is guaranteed</h3>
+      <p style="font-size:15px; line-height:1.8; color:oklch(38% 0.012 55); max-width:540px; margin:22px auto 0;">Keloids are genuinely difficult to treat, and even a well-chosen combination of modalities carries a real chance of recurrence. Part of the consultation is being honest about that risk from the start, rather than promising a result no treatment can reliably guarantee.</p>
+    </div>
+  </div>
+
+  <!-- THE PROCESS -->
+  <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 150px) clamp(24px, 5vw, 56px);">
+    <div style="text-align:center; margin-bottom:56px;">
+      <span class="eyebrow">Start to Finish</span>
+      <h2 style="font-weight:300; font-size:clamp(28px, 3vw, 38px); line-height:1.25; margin-top:16px;">How it runs</h2>
+    </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">I</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Consultation</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Assessment in person, a discussion of what is realistic, and a plan. Nothing is booked at the first visit unless you want it to be.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">II</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">The procedure</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">Performed at St. Luke's Medical Center, BGC or Cardinal Santos Medical Center; duration and anaesthesia are prescribed on a case-to-case basis.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">III</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Early recovery</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">What to expect in the first week &mdash; dressings, swelling, activity limits, time off work &mdash; is reviewed individually before you leave the clinic.</div>
+        </div>
+      </div>
+      <div class="row" style="padding:32px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:baseline;">
+        <span class="label" style="font-size:15px;">IV</span>
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:8px;">Follow-up</div>
+          <div style="font-size:14px; line-height:1.7; color:oklch(42% 0.01 55); max-width:560px;">A follow-up schedule is set at your first post-operative visit, individualized to the procedure. For patients travelling from abroad, follow-up continues by video once you are home.</div>
+        </div>
+      </div>
+
+    <!-- PRACTICAL -->
+    <p class="label reveal" style="text-align:center; margin-top:40px; max-width:520px; margin-left:auto; margin-right:auto;">Candidacy for any procedure is determined at an in-person consultation, where anaesthesia, duration and recovery specifics are prescribed on a case-to-case basis. Not every procedure suits every patient.</p>
+  </div>
+
+  <!-- RELATED -->
+  <div style="background: oklch(97% 0.008 80);">
+    <div style="max-width:820px; margin:0 auto; padding:clamp(72px, 12vw, 120px) clamp(24px, 5vw, 56px);">
+      <span class="eyebrow" style="display:block; text-align:center; margin-bottom:40px;">Related</span>
+      <div class="row" style="padding:26px 0; display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Complex Tissue Reconstruction</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">Microsurgical repair of larger defects</div>
+        </div>
+        <a href="tissue-reconstruction.html" class="link-quiet">Read on</a>
+      </div>
+      <div class="row" style="padding:26px 0; border-bottom:1px solid oklch(88% 0.006 80); display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+        <div>
+          <div class="row-title" style="font-size:17px; font-weight:500; margin-bottom:5px;">Regenerative technique</div>
+          <div style="font-size:13.5px; color:oklch(48% 0.012 55);">Biologic support for healing</div>
+        </div>
+        <a href="regenerative.html" class="link-quiet">Read on</a>
+      </div>
     </div>
   </div>
 
@@ -295,8 +318,8 @@
   <div style="position:relative; overflow:hidden; padding:clamp(72px, 12vw, 170px) clamp(24px, 5vw, 56px); background: oklch(15% 0.035 155); text-align:center;">
     <div class="aurora" style="position:absolute; inset:-25%; pointer-events:none; background: radial-gradient(closest-side, oklch(46% 0.11 155 / 0.45), transparent 72%);"></div>
     <div style="position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:26px;">
-      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:480px;">Not sure which location works for you?</h2>
-      <a href="contact.html" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
+      <h2 style="font-weight:300; font-style:italic; font-size:clamp(30px, 3.2vw, 44px); line-height:1.3; color:oklch(97% 0.006 85); max-width:520px;">Discuss whether this is right for you</h2>
+      <a href="../contact.html" class="btn-primary btn-invert" style="margin-top:8px;">Book a Consultation</a>
       <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:6px; font-size:14px; color:oklch(84% 0.005 240);">
         <a href="tel:+639681368686" style="color:inherit; text-decoration:none;">+63 968 136 8686</a>
         <span style="opacity:0.5;">&middot;</span>
@@ -319,12 +342,12 @@
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Practice</span>
-        <a href="about.html" class="footer-link" style="font-size:13.5px;">About</a>
-        <a href="procedures/index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
-        <a href="locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
-        <a href="consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
-        <a href="international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
-        <a href="contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
+        <a href="../about.html" class="footer-link" style="font-size:13.5px;">About</a>
+        <a href="index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
+        <a href="../locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
+        <a href="../consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
+        <a href="../international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
+        <a href="../contact.html" class="footer-link" style="font-size:13.5px;">Contact</a>
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Locations</span>
