@@ -14,9 +14,85 @@
 <meta property="og:title" content="Locations — Dr. Pacifico Cruz, MD">
 <meta property="og:description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
 <meta property="og:url" content="https://pacificocruz.com/locations.html">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://pacificocruz.com/images/hero/hero-portrait.jpeg">
+<meta property="og:image:alt" content="Dr. Pacifico Cruz, MD">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Locations — Dr. Pacifico Cruz, MD">
 <meta name="twitter:description" content="Dr. Cruz consults across partner hospitals in Metro Manila, with a flagship lymphedema surgery consultancy at St. Luke’s Medical Center, BGC.">
+<meta name="twitter:image" content="https://pacificocruz.com/images/hero/hero-portrait.jpeg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://pacificocruz.com/locations.html#st-lukes-bgc",
+      "name": "Dr. Pacifico Cruz, MD \u2014 St. Luke's Medical Center, BGC",
+      "url": "https://pacificocruz.com/locations.html#st-lukes-bgc",
+      "image": "https://pacificocruz.com/images/hero/hero-portrait.jpeg",
+      "telephone": "+63-968-136-8686",
+      "medicalSpecialty": "PlasticSurgery",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite 1036, Medical Arts Building, St. Luke's Medical Center - BGC",
+        "addressLocality": "Taguig",
+        "addressRegion": "Metro Manila",
+        "addressCountry": "PH"
+      },
+      "hasMap": "https://share.google/BSbWC3oVjsTA5mUBt",
+      "employee": {
+        "@type": "Physician",
+        "name": "Dr. Pacifico Cruz, MD",
+        "url": "https://pacificocruz.com/"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://pacificocruz.com/locations.html#cardinal-santos",
+      "name": "Dr. Pacifico Cruz, MD \u2014 Cardinal Santos Medical Center",
+      "url": "https://pacificocruz.com/locations.html#cardinal-santos",
+      "image": "https://pacificocruz.com/images/hero/hero-portrait.jpeg",
+      "telephone": "+63-968-136-8686",
+      "medicalSpecialty": "PlasticSurgery",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite 176, Medical Arts Building, Wilson St.",
+        "addressLocality": "Greenhills, San Juan",
+        "addressRegion": "Metro Manila",
+        "addressCountry": "PH"
+      },
+      "hasMap": "https://share.google/akMbFN1fbXXR5gn6f",
+      "employee": {
+        "@type": "Physician",
+        "name": "Dr. Pacifico Cruz, MD",
+        "url": "https://pacificocruz.com/"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://pacificocruz.com/locations.html#aesthetic-institute",
+      "name": "Dr. Pacifico Cruz, MD \u2014 Aesthetic Institute of the Philippines",
+      "url": "https://pacificocruz.com/locations.html#aesthetic-institute",
+      "image": "https://pacificocruz.com/images/hero/hero-portrait.jpeg",
+      "telephone": "+63-968-136-8686",
+      "medicalSpecialty": "PlasticSurgery",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15 Eisenhower Street",
+        "addressLocality": "Greenhills, San Juan",
+        "addressRegion": "Metro Manila",
+        "addressCountry": "PH"
+      },
+      "hasMap": "https://share.google/TuN4ad4UVRUFHvnI2",
+      "employee": {
+        "@type": "Physician",
+        "name": "Dr. Pacifico Cruz, MD",
+        "url": "https://pacificocruz.com/"
+      }
+    }
+  ]
+}
+</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,13 +215,17 @@
     /* ——— LUZ: a figure travelling the route as you scroll ——— */
     .arc-scope { view-timeline-name: --arc; view-timeline-axis: block; }
     @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+    @keyframes wax-wane { 0%, 100% { transform: scale(0.7); } 50% { transform: scale(1.4); } }
     .travel { offset-rotate: auto; offset-distance: 50%; }
+    .pulse { transform-box: fill-box; transform-origin: center; }
     @supports not (offset-path: path("M0 0")) { .travel { display: none; } }
     @supports (animation-timeline: view()) {
       .travel { animation: travel linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
+      .pulse { animation: wax-wane linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
     }
     @media (prefers-reduced-motion: reduce) {
       .travel { animation: none !important; offset-distance: 50% !important; }
+      .pulse { animation: none !important; transform: none !important; }
     }
 
     /* ——— RESPONSIVE ——— */
@@ -230,9 +310,11 @@
     <svg width="100%" height="140" viewBox="0 0 560 140" fill="none">
       <!-- abstract car, five strokes, riding the route -->
       <g class="travel" style="offset-path: path('M0 110 C 90 70, 190 130, 260 88 S 420 30, 550 55');">
-        <path d="M-11 2 L-11 -1 L-6 -1 L-3 -5 L4 -5 L7 -1 L11 -1 L11 2 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-        <circle cx="-6" cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
-        <circle cx="6"  cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
+        <g class="pulse">
+          <path d="M-11 2 L-11 -1 L-6 -1 L-3 -5 L4 -5 L7 -1 L11 -1 L11 2 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
+          <circle cx="-6" cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
+          <circle cx="6"  cy="2" r="2.2" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
+        </g>
       </g>
       <path class="draw" d="M0 110 C 90 70, 190 130, 260 88 S 420 30, 550 55" stroke="oklch(16% 0.006 50)" stroke-width="1" opacity="0.4" style="stroke-dasharray:760; stroke-dashoffset:760;"/>
       <g transform="translate(240,88)">
@@ -251,7 +333,7 @@
 
   <!-- LOCATION LIST -->
   <div style="max-width:820px; margin:0 auto; padding:0 clamp(24px, 5vw, 56px) clamp(72px, 12vw, 150px);">
-    <div class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
+    <div id="st-lukes-bgc" class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
       <div>
         <div class="label" style="margin-bottom:10px;">Flagship &middot; Lymphedema Surgery Consultancy</div>
         <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">St. Luke's Medical Center &mdash; BGC</div>
@@ -261,11 +343,12 @@
           By appointment
         </div>
       </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
+      <div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end; gap:12px;">
+        <div style="width:100%; border-radius:6px; overflow:hidden; border:1px solid oklch(88% 0.006 80);"><iframe src="https://maps.google.com/maps?q=St.+Luke%27s+Medical+Center+Global+City%2C+Taguig%2C+Metro+Manila%2C+Philippines&output=embed" width="100%" height="160" style="border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: St. Luke's Medical Center — BGC"></iframe></div>
         <a href="https://share.google/BSbWC3oVjsTA5mUBt" target="_blank" rel="noopener" class="link-quiet">Get Directions</a>
       </div>
     </div>
-    <div class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
+    <div id="cardinal-santos" class="row" style="padding:44px 0; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
       <div>
         <div class="label" style="margin-bottom:10px;">Consultation</div>
         <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">Cardinal Santos Medical Center</div>
@@ -275,11 +358,12 @@
           By appointment
         </div>
       </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
+      <div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end; gap:12px;">
+        <div style="width:100%; border-radius:6px; overflow:hidden; border:1px solid oklch(88% 0.006 80);"><iframe src="https://maps.google.com/maps?q=Cardinal+Santos+Medical+Center%2C+Wilson+St%2C+Greenhills%2C+San+Juan%2C+Metro+Manila%2C+Philippines&output=embed" width="100%" height="160" style="border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: Cardinal Santos Medical Center"></iframe></div>
         <a href="https://share.google/akMbFN1fbXXR5gn6f" target="_blank" rel="noopener" class="link-quiet">Get Directions</a>
       </div>
     </div>
-    <div class="row" style="padding:44px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
+    <div id="aesthetic-institute" class="row" style="padding:44px 0; border-bottom:1px solid oklch(88% 0.006 80); display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
       <div>
         <div class="label" style="margin-bottom:10px;">Consultation &middot; Aesthetic Procedures</div>
         <div class="row-title" style="font-family:'Newsreader', serif; font-weight:500; font-size:23px; margin-bottom:14px;">Aesthetic Institute of the Philippines</div>
@@ -289,7 +373,8 @@
           By appointment
         </div>
       </div>
-      <div style="display:flex; align-items:flex-end; justify-content:flex-start;">
+      <div style="display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end; gap:12px;">
+        <div style="width:100%; border-radius:6px; overflow:hidden; border:1px solid oklch(88% 0.006 80);"><iframe src="https://maps.google.com/maps?q=15+Eisenhower+Street%2C+Greenhills%2C+San+Juan%2C+Metro+Manila%2C+Philippines&output=embed" width="100%" height="160" style="border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: Aesthetic Institute of the Philippines"></iframe></div>
         <a href="https://share.google/TuN4ad4UVRUFHvnI2" target="_blank" rel="noopener" class="link-quiet">Get Directions</a>
       </div>
     </div>

@@ -14,9 +14,12 @@
 <meta property="og:title" content="International Patients — Dr. Pacifico Cruz, MD">
 <meta property="og:description" content="Remote consultation and travel planning for patients coming to Metro Manila from across the region and from Filipino communities abroad.">
 <meta property="og:url" content="https://pacificocruz.com/international.html">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://pacificocruz.com/images/hero/hero-portrait.jpeg">
+<meta property="og:image:alt" content="Dr. Pacifico Cruz, MD">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="International Patients — Dr. Pacifico Cruz, MD">
 <meta name="twitter:description" content="Remote consultation and travel planning for patients coming to Metro Manila from across the region and from Filipino communities abroad.">
+<meta name="twitter:image" content="https://pacificocruz.com/images/hero/hero-portrait.jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,13 +142,17 @@
     /* ——— LUZ: a figure travelling the route as you scroll ——— */
     .arc-scope { view-timeline-name: --arc; view-timeline-axis: block; }
     @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+    @keyframes wax-wane { 0%, 100% { transform: scale(0.7); } 50% { transform: scale(1.4); } }
     .travel { offset-rotate: auto; offset-distance: 50%; }
+    .pulse { transform-box: fill-box; transform-origin: center; }
     @supports not (offset-path: path("M0 0")) { .travel { display: none; } }
     @supports (animation-timeline: view()) {
       .travel { animation: travel linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
+      .pulse { animation: wax-wane linear both; animation-timeline: --arc; animation-range: entry 10% exit 90%; }
     }
     @media (prefers-reduced-motion: reduce) {
       .travel { animation: none !important; offset-distance: 50% !important; }
+      .pulse { animation: none !important; transform: none !important; }
     }
 
     /* ——— RESPONSIVE ——— */
@@ -233,7 +240,9 @@
         <svg width="100%" height="130" viewBox="0 0 640 130" fill="none" style="max-width:560px;">
       <!-- abstract aircraft on the approach -->
       <g class="travel" style="offset-path: path('M40 96 C 180 6, 460 6, 600 82');">
-        <path d="M13 0 L-11 -7 L-6 0 L-11 7 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
+        <g class="pulse">
+          <path d="M13 0 L-11 -7 L-6 0 L-11 7 Z" fill="none" stroke="oklch(16% 0.006 50)" stroke-width="1"/>
+        </g>
       </g>
           <path class="draw" d="M40 96 C 180 6, 460 6, 600 82" stroke="oklch(16% 0.006 50)" stroke-width="1" opacity="0.4" style="stroke-dasharray:640; stroke-dashoffset:640;"/>
           <circle cx="40" cy="96" r="2.5" fill="oklch(58% 0.008 240)"/>
