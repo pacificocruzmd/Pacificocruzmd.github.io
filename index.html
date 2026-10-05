@@ -258,7 +258,8 @@
     }
   
     /* ——— PROCEDURES SIDE PANEL ——— */
-    .proc-tab { position:fixed; top:50%; right:0; transform:translateY(-50%); z-index:21; display:flex; align-items:center; justify-content:center; background:oklch(15% 0.035 155); color:oklch(84% 0.005 240); border:1px solid oklch(38% 0.09 155); border-radius:14px 0 0 14px; padding:22px 4px 22px 8px; writing-mode:vertical-rl; text-orientation:mixed; font-family:'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size:12px; letter-spacing:0.08em; cursor:pointer; box-shadow:0 0 10px -5px oklch(20% 0.01 60 / 0.3); transition:background 0.25s ease, padding 0.25s ease; }
+    .proc-tab { position:fixed; top:50%; right:0; transform:translateY(-50%); z-index:21; display:flex; align-items:center; justify-content:center; background:oklch(15% 0.035 155); color:oklch(84% 0.005 240); border:1px solid oklch(38% 0.09 155); border-radius:14px 0 0 14px; padding:22px 4px 22px 8px; writing-mode:vertical-rl; text-orientation:mixed; font-family:'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size:12px; letter-spacing:0.08em; cursor:pointer; box-shadow:0 0 10px -5px oklch(20% 0.01 60 / 0.3); transition:background 0.25s ease, padding 0.25s ease, transform 0.4s ease, opacity 0.4s ease, visibility 0s linear 0s; }
+    .proc-tab.in-hero { transform:translate(100%, -50%); opacity:0; visibility:hidden; pointer-events:none; transition:background 0.25s ease, padding 0.25s ease, transform 0.4s ease, opacity 0.4s ease, visibility 0s linear 0.4s; }
     .proc-tab:hover { background:oklch(38% 0.09 155); color:oklch(97% 0.006 85); border-color:oklch(60% 0.13 155); }
     .proc-panel-overlay { position:fixed; inset:0; background:oklch(15% 0.01 145 / 0.4); z-index:22; opacity:0; pointer-events:none; transition:opacity 0.3s ease; }
     .proc-panel-overlay.is-open { opacity:1; pointer-events:auto; }
@@ -266,9 +267,12 @@
     .proc-panel.is-open { transform:translate(0, -50%); }
     .proc-panel-close { align-self:flex-end; background:none; border:none; cursor:pointer; padding:8px; margin:-10px -10px 22px 0; font-size:24px; line-height:1; color:oklch(16% 0.006 50); font-family:inherit; }
     .proc-panel h3 { font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:300; font-size:24px; color:oklch(16% 0.006 50); margin:0 0 16px; }
+    .proc-panel-head { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:0 0 16px; }
+    .proc-panel-head h3 { margin:0; }
+    .proc-panel a.proc-panel-viewall { padding:0; border:none; font-size:12px; font-weight:400; letter-spacing:0.02em; color:oklch(52% 0.012 60); white-space:nowrap; text-decoration:underline; text-decoration-color:oklch(82% 0.008 80); text-underline-offset:4px; transition:color 0.2s ease, text-decoration-color 0.2s ease; }
+    .proc-panel a.proc-panel-viewall:hover { color:oklch(38% 0.09 155); text-decoration-color:currentColor; padding-left:0; }
     .proc-panel a { padding:11px 0; border-top:1px solid oklch(90% 0.006 85); font-size:13.5px; color:oklch(16% 0.006 50); text-decoration:none; display:block; transition:color 0.2s ease, padding-left 0.2s ease; }
     .proc-panel a:hover { color:oklch(38% 0.09 155); padding-left:6px; }
-    .proc-panel a.proc-panel-all { margin-top:6px; border-top:1px solid oklch(90% 0.006 85); border-bottom:1px solid oklch(90% 0.006 85); font-weight:500; color:oklch(38% 0.09 155); }
     @media (max-width: 720px) {
       .proc-tab { padding:14px 3px 14px 6px; font-size:11px; }
       .proc-panel { width:min(300px, 88vw); padding:28px 22px; }
@@ -287,7 +291,7 @@
     <a href="/" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
     <div style="position:relative;">
       <button class="nav-toggle" aria-label="Open menu" aria-haspopup="true" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-mobile-menu"><a href="about.html">About</a><a href="procedures/lymphedema-coordination.html" style="color:oklch(38% 0.09 155); font-weight:500;">Lymphedema</a><a href="locations.html">Locations</a><a href="consultation.html">Consultation</a><a href="international.html">International Patients</a><a href="contact.html" class="nav-cta">Book</a></div>
+      <div class="nav-mobile-menu"><a href="about.html">About</a><a href="locations.html">Locations</a><a href="consultation.html">Consultation</a><a href="international.html">International Patients</a><a href="contact.html" class="nav-cta">Book</a></div>
     </div>
     <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
   </div>
@@ -421,7 +425,7 @@
           toxin and injectable treatment, and fat-based procedures that refine
           proportion while keeping expression intact.
         </p>
-        <a href="procedures/index.html#aesthetic-section" class="link-quiet" style="margin-top:4px; align-self:flex-start;">Explore aesthetic surgery</a>
+        <a href="procedures/#aesthetic-section" class="link-quiet" style="margin-top:4px; align-self:flex-start;">Explore aesthetic surgery</a>
       </div>
     </div>
     <div id="regenerative" class="row" style="padding:44px 0; display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:start;">
@@ -433,7 +437,7 @@
           methods that make the crossing possible: the same approach to healing that
           strengthens a reconstruction is what sustains an aesthetic result.
         </p>
-        <a href="procedures/index.html#regenerative-section" class="link-quiet" style="margin-top:4px; align-self:flex-start;">Learn about regenerative surgery</a>
+        <a href="procedures/#regenerative-section" class="link-quiet" style="margin-top:4px; align-self:flex-start;">Learn about regenerative surgery</a>
       </div>
     </div>
     <div id="reconstructive" class="row" style="padding:44px 0; border-bottom:1px solid oklch(90% 0.006 80); display:grid; grid-template-columns: 60px 1fr; gap:32px; align-items:start;">
@@ -447,7 +451,7 @@
           (2024–2025), in a year-long fellowship spanning reconstructive
           surgery, microsurgery, keloid management and lymphedema.
         </p>
-        <a href="procedures/index.html#reconstructive-section" class="link-quiet" style="margin-top:4px; align-self:flex-start;">Explore reconstructive care</a>
+        <a href="procedures/#reconstructive-section" class="link-quiet" style="margin-top:4px; align-self:flex-start;">Explore reconstructive care</a>
       </div>
     </div>
     </div>
@@ -522,7 +526,7 @@
           <div style="font-size:13.5px; line-height:1.7; color:oklch(45% 0.01 55); max-width:520px;">Reconstructive care for scarring and burn injury, including revision of established scars.</div>
         </div>
       </div>
-      <p class="reveal" style="text-align:center; margin-top:48px;"><a href="procedures/index.html" class="link-quiet">View all procedures</a></p>
+      <p class="reveal" style="text-align:center; margin-top:48px;"><a href="procedures/" class="link-quiet">View all procedures</a></p>
     </div>
   </div>
 
@@ -633,6 +637,7 @@
         <span style="font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:48px; line-height:1; margin-bottom:2px;">φ</span>
         <span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:19px;">Dr. Pacifico Cruz</span>
         <span style="font-size:13px; color:oklch(48% 0.012 55); line-height:1.7;">Board-certified plastic surgeon — reconstructive microsurgery and aesthetic facial rejuvenation.</span>
+        <a href="https://provenanceclinic.com" target="_blank" rel="noopener" class="footer-link" style="font-size:12px; margin-top:6px;">Provenance <span aria-hidden="true">&#8599;</span></a>
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Practice</span>
@@ -725,7 +730,7 @@
 <div class="proc-panel-overlay"></div>
 <div class="proc-panel" role="dialog" aria-label="Procedures">
   <button class="proc-panel-close" aria-label="Close procedures menu">&times;</button>
-  <h3>Procedures</h3>
+  <div class="proc-panel-head"><h3>Procedures</h3><a href="procedures/" class="proc-panel-viewall">View all</a></div>
   <a href="procedures/macs-facelift.html">MACS Facelift</a>
   <a href="procedures/facial-rejuvenation.html">Facial Rejuvenation</a>
   <a href="procedures/rhinoplasty.html">Rhinoplasty</a>
@@ -734,7 +739,6 @@
   <a href="procedures/scar-and-burn-care.html">Scar, Burn &amp; Keloid Care</a>
   <a href="procedures/tissue-reconstruction.html">Tissue Reconstruction</a>
   <a href="procedures/lymphedema-surgery.html">Lymphedema Surgery</a>
-  <a href="procedures/index.html" class="proc-panel-all">View All Procedures</a>
   <div class="proc-contact" style="margin-top:26px; padding-top:24px; border-top:1px solid oklch(90% 0.006 85); display:flex; flex-direction:column; gap:13px;">
     <span class="label">Contact</span>
     <a href="tel:+639681368686" class="footer-link" style="font-size:13.5px;">+63 968 136 8686</a>
@@ -762,6 +766,17 @@
     if (overlay) overlay.classList.remove('is-open');
     if (panel) panel.classList.remove('is-open');
     if (tab) tab.setAttribute('aria-expanded', 'false');
+  }
+  var hero = document.querySelector('.hero');
+  if (tab && hero) {
+    tab.classList.add('in-hero');
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function(entries){
+        tab.classList.toggle('in-hero', entries[0].isIntersecting);
+      }, { threshold: 0, rootMargin: '-50% 0px 0px 0px' }).observe(hero);
+    } else {
+      tab.classList.remove('in-hero');
+    }
   }
   if (tab) tab.addEventListener('click', openPanel);
   if (closeBtn) closeBtn.addEventListener('click', closePanel);

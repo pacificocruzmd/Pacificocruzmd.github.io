@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Dr. Pacifico Cruz, MD">
 <meta property="og:title" content="Procedures — Dr. Pacifico Cruz, MD">
 <meta property="og:description" content="Aesthetic, regenerative, and reconstructive procedures — MACS facelift, rhinoplasty, body contouring, nanofat, lymphedema surgery, and more.">
-<meta property="og:url" content="https://pacificocruz.com/procedures">
+<meta property="og:url" content="https://pacificocruz.com/procedures/">
 <meta property="og:image" content="https://pacificocruz.com/images/procedures/macs-facelift-lead.jpeg">
 <meta property="og:image:alt" content="Procedures overview">
 <meta name="twitter:card" content="summary_large_image">
@@ -196,9 +196,12 @@
     .proc-panel.is-open { transform:translate(0, -50%); }
     .proc-panel-close { align-self:flex-end; background:none; border:none; cursor:pointer; padding:8px; margin:-10px -10px 22px 0; font-size:24px; line-height:1; color:oklch(16% 0.006 50); font-family:inherit; }
     .proc-panel h3 { font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:300; font-size:24px; color:oklch(16% 0.006 50); margin:0 0 16px; }
+    .proc-panel-head { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:0 0 16px; }
+    .proc-panel-head h3 { margin:0; }
+    .proc-panel a.proc-panel-viewall { padding:0; border:none; font-size:12px; font-weight:400; letter-spacing:0.02em; color:oklch(52% 0.012 60); white-space:nowrap; text-decoration:underline; text-decoration-color:oklch(82% 0.008 80); text-underline-offset:4px; transition:color 0.2s ease, text-decoration-color 0.2s ease; }
+    .proc-panel a.proc-panel-viewall:hover { color:oklch(38% 0.09 155); text-decoration-color:currentColor; padding-left:0; }
     .proc-panel a { padding:11px 0; border-top:1px solid oklch(90% 0.006 85); font-size:13.5px; color:oklch(16% 0.006 50); text-decoration:none; display:block; transition:color 0.2s ease, padding-left 0.2s ease; }
     .proc-panel a:hover { color:oklch(38% 0.09 155); padding-left:6px; }
-    .proc-panel a.proc-panel-all { margin-top:6px; border-top:1px solid oklch(90% 0.006 85); border-bottom:1px solid oklch(90% 0.006 85); font-weight:500; color:oklch(38% 0.09 155); }
     @media (max-width: 720px) {
       .proc-tab { padding:14px 3px 14px 6px; font-size:11px; }
       .proc-panel { width:min(300px, 88vw); padding:28px 22px; }
@@ -217,7 +220,7 @@
     <a href="/" class="nav-logo" aria-label="Dr. Pacifico Cruz — Home">φ</a>
     <div style="position:relative;">
       <button class="nav-toggle" aria-label="Open menu" aria-haspopup="true" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-mobile-menu"><a href="../about.html">About</a><a href="lymphedema-coordination.html" style="color:oklch(38% 0.09 155); font-weight:500;">Lymphedema</a><a href="../locations.html">Locations</a><a href="../consultation.html">Consultation</a><a href="../international.html">International Patients</a><a href="../contact.html" class="nav-cta">Book</a></div>
+      <div class="nav-mobile-menu"><a href="../about.html">About</a><a href="../locations.html">Locations</a><a href="../consultation.html">Consultation</a><a href="../international.html">International Patients</a><a href="../contact.html" class="nav-cta">Book</a></div>
     </div>
     <div class="progress" style="position:absolute; left:0; bottom:0; height:2px; width:100%; background:oklch(38% 0.09 155); transform:scaleX(0); transform-origin:left;"></div>
   </div>
@@ -446,11 +449,12 @@
         <span style="font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:48px; line-height:1; margin-bottom:2px;">φ</span>
         <span style="font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:19px;">Dr. Pacifico Cruz</span>
         <span style="font-size:13px; color:oklch(48% 0.012 55); line-height:1.7;">Board-certified plastic surgeon &mdash; reconstructive microsurgery and aesthetic facial rejuvenation.</span>
+        <a href="https://provenanceclinic.com" target="_blank" rel="noopener" class="footer-link" style="font-size:12px; margin-top:6px;">Provenance <span aria-hidden="true">&#8599;</span></a>
       </div>
       <div style="display:flex; flex-direction:column; gap:13px;">
         <span class="label">Practice</span>
         <a href="../about.html" class="footer-link" style="font-size:13.5px;">About</a>
-        <a href="index.html" class="footer-link" style="font-size:13.5px;">Procedures</a>
+        <a href="./" class="footer-link" style="font-size:13.5px;">Procedures</a>
         <a href="../locations.html" class="footer-link" style="font-size:13.5px;">Locations</a>
         <a href="../consultation.html" class="footer-link" style="font-size:13.5px;">Consultation</a>
         <a href="../international.html" class="footer-link" style="font-size:13.5px;">International Patients</a>
@@ -520,7 +524,7 @@
 <div class="proc-panel-overlay"></div>
 <div class="proc-panel" role="dialog" aria-label="Procedures">
   <button class="proc-panel-close" aria-label="Close procedures menu">&times;</button>
-  <h3>Procedures</h3>
+  <div class="proc-panel-head"><h3>Procedures</h3><a href="./" class="proc-panel-viewall">View all</a></div>
   <a href="macs-facelift.html">MACS Facelift</a>
   <a href="facial-rejuvenation.html">Facial Rejuvenation</a>
   <a href="rhinoplasty.html">Rhinoplasty</a>
