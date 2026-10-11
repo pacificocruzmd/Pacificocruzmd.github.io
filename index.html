@@ -23,60 +23,165 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Dr. Pacifico Cruz, MD",
-  "url": "https://pacificocruz.com/",
-  "image": "https://pacificocruz.com/images/hero/hero-portrait.jpeg",
-  "telephone": "+63-968-136-8686",
-  "email": "hello@pacificocruz.com",
-  "medicalSpecialty": ["PlasticSurgery", "Surgical"],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Suite 1036, Medical Arts Building, St. Luke's Medical Center - BGC",
-    "addressLocality": "Taguig",
-    "addressRegion": "Metro Manila",
-    "addressCountry": "PH"
-  },
-  "hospitalAffiliation": [
+  "@graph": [
     {
-      "@type": "Hospital",
-      "name": "St. Luke's Medical Center - BGC",
+      "@type": "WebSite",
+      "@id": "https://pacificocruz.com/#website",
+      "url": "https://pacificocruz.com/",
+      "name": "Dr. Pacifico Cruz, MD",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://pacificocruz.com/#person",
+      "name": "Pacifico Cruz",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "MD",
+      "jobTitle": "Plastic Surgeon",
+      "url": "https://pacificocruz.com/about.html",
+      "image": "https://pacificocruz.com/images/hero/hero-portrait.jpeg",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of the Philippines College of Medicine"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Nippon Medical School"
+        }
+      ],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Board certification",
+        "name": "Diplomate, Philippine Board of Plastic Surgery",
+        "dateCreated": "2024"
+      },
+      "knowsAbout": [
+        "Lymphedema surgery",
+        "Reconstructive microsurgery",
+        "MACS facelift",
+        "Rhinoplasty",
+        "Nanofat and fat grafting",
+        "Scar, burn and keloid care",
+        "Body contouring"
+      ],
+      "worksFor": {
+        "@id": "https://provenanceclinic.com/#clinic"
+      },
+      "sameAs": [
+        "https://ph.linkedin.com/in/picoycruz",
+        "https://www.facebook.com/picoycruz/",
+        "https://www.instagram.com/pacificocruzmd/"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://pacificocruz.com/#physician",
+      "name": "Dr. Pacifico Cruz, MD",
+      "url": "https://pacificocruz.com/",
+      "image": "https://pacificocruz.com/images/hero/hero-portrait.jpeg",
+      "telephone": "+63-968-136-8686",
+      "email": "hello@pacificocruz.com",
+      "medicalSpecialty": "PlasticSurgery",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Suite 1036, Medical Arts Building",
+        "streetAddress": "Suite 1036, Medical Arts Building, St. Luke's Medical Center - BGC",
         "addressLocality": "Taguig",
         "addressRegion": "Metro Manila",
         "addressCountry": "PH"
-      }
-    },
-    {
-      "@type": "Hospital",
-      "name": "Cardinal Santos Medical Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Suite 176, Medical Arts Building, Wilson St.",
-        "addressLocality": "Greenhills, San Juan",
-        "addressRegion": "Metro Manila",
-        "addressCountry": "PH"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Aesthetic Institute of the Philippines",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "15 Eisenhower Street",
-        "addressLocality": "Greenhills, San Juan",
-        "addressRegion": "Metro Manila",
-        "addressCountry": "PH"
+      },
+      "hospitalAffiliation": [
+        {
+          "@type": "Hospital",
+          "name": "St. Luke's Medical Center - BGC",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Suite 1036, Medical Arts Building",
+            "addressLocality": "Taguig",
+            "addressRegion": "Metro Manila",
+            "addressCountry": "PH"
+          }
+        },
+        {
+          "@type": "Hospital",
+          "name": "Cardinal Santos Medical Center",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Suite 176, Medical Arts Building, Wilson St.",
+            "addressLocality": "Greenhills, San Juan",
+            "addressRegion": "Metro Manila",
+            "addressCountry": "PH"
+          }
+        },
+        {
+          "@type": "MedicalClinic",
+          "name": "Aesthetic Institute of the Philippines",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "15 Eisenhower Street",
+            "addressLocality": "Greenhills, San Juan",
+            "addressRegion": "Metro Manila",
+            "addressCountry": "PH"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://ph.linkedin.com/in/picoycruz",
+        "https://www.facebook.com/picoycruz/",
+        "https://www.instagram.com/pacificocruzmd/",
+        "https://seriousmd.com/doc/pcruz"
+      ],
+      "description": "Board-certified plastic surgeon in Metro Manila, trained in reconstructive microsurgery and MACS facelift technique in Ghent and Tokyo.",
+      "areaServed": "Metro Manila, Philippines",
+      "employee": {
+        "@id": "https://pacificocruz.com/#person"
+      },
+      "parentOrganization": {
+        "@id": "https://provenanceclinic.com/#clinic"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Lymphedema Surgery",
+          "url": "https://pacificocruz.com/procedures/lymphedema-surgery.html"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "MACS Facelift",
+          "url": "https://pacificocruz.com/procedures/macs-facelift.html"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Rhinoplasty",
+          "url": "https://pacificocruz.com/procedures/rhinoplasty.html"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Body Contouring",
+          "url": "https://pacificocruz.com/procedures/body-contouring.html"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Nanofat & Structural Fat Grafting",
+          "url": "https://pacificocruz.com/procedures/nanofat.html"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Scar, Burn & Keloid Care",
+          "url": "https://pacificocruz.com/procedures/scar-and-burn-care.html"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Tissue Reconstruction",
+          "url": "https://pacificocruz.com/procedures/tissue-reconstruction.html"
+        }
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "https://pacificocruz.com/contact.html",
+        "name": "Book a Consultation"
       }
     }
-  ],
-  "sameAs": [
-    "https://ph.linkedin.com/in/picoycruz",
-    "https://www.facebook.com/picoycruz/",
-    "https://www.instagram.com/pacificocruzmd/",
-    "https://seriousmd.com/doc/pcruz"
   ]
 }
 </script>
